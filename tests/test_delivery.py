@@ -231,3 +231,33 @@ def test_open_run_clears_previous_input_sequence(tmp_path, prepared, monkeypatch
     assert window.result is not None
     assert window.sequence_list.count()==0
     window.close()
+
+
+def test_open_legacy_run_merges_nested_defaults(tmp_path, prepared, monkeypatch):
+    from PySide6.QtWidgets import QApplication, QFileDialog
+    from xiyuan_mvp.gui import MainWindow
+    from xiyuan_mvp.config import validate_config
+    app = QApplication.instance() or QApplication([])
+    _, _, config, result = prepared
+    legacy = deepcopy(config)
+    del legacy["blend"]["ai_boundary_threshold"]
+    del legacy["inpainting"]["tile_overlap"]
+    legacy["blend"]["ai_opacity"] = 0.37
+    legacy["inpainting"]["seed"] = 123
+    save_run(tmp_path / "legacy", result, legacy)
+    before = (tmp_path / "legacy/run.json").read_bytes()
+    window = MainWindow()
+    monkeypatch.setattr(QFileDialog, "getOpenFileName",
+                        lambda *a, **k: (str(tmp_path / "legacy/run.json"), "JSON"))
+    try:
+        window._open_run()
+        assert window.result is not None
+        window._sync_config()
+        validate_config(window.config)
+        assert window.config["blend"]["ai_boundary_threshold"] == config["blend"]["ai_boundary_threshold"]
+        assert window.config["inpainting"]["tile_overlap"] == config["inpainting"]["tile_overlap"]
+        assert window.config["blend"]["ai_opacity"] == pytest.approx(0.37)
+        assert window.config["inpainting"]["seed"] == 123
+        assert (tmp_path / "legacy/run.json").read_bytes() == before
+    finally:
+        window.close()

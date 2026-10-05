@@ -1,5 +1,8 @@
 import json
 import zipfile
+from contextlib import contextmanager
+from pathlib import Path
+import tempfile
 
 import cv2
 import numpy as np
@@ -13,7 +16,17 @@ from xiyuan_mvp.run_io import save_run
 from tests.test_pipeline_smoke import _synthetic_pair
 
 
-def test_gpu_job_roundtrip_preserves_manual_mask_and_geometry(tmp_path):
+@pytest.mark.parametrize('aliased_temp', [False, True])
+def test_gpu_job_roundtrip_preserves_manual_mask_and_geometry(tmp_path, monkeypatch, aliased_temp):
+    if aliased_temp:
+        original = tempfile.TemporaryDirectory
+        @contextmanager
+        def aliased_directory(*args, **kwargs):
+            with original(*args, **kwargs) as directory:
+                alias = Path(directory) / 'alias'
+                alias.mkdir()
+                yield str(alias / '..')
+        monkeypatch.setattr('xiyuan_mvp.gpu_job.tempfile.TemporaryDirectory', aliased_directory)
     config=load_config()
     a,b=_synthetic_pair()
     prepared=StitchPipeline(config).run(a,b)

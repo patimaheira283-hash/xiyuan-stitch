@@ -19,15 +19,19 @@ def _merge(base: dict, overrides: dict) -> dict:
     return base
 
 
-def load_config(path: str | Path | None = None) -> dict[str, Any]:
+def load_config(path: str | Path | None = None, *, overrides: dict | None = None) -> dict[str, Any]:
     with DEFAULT_CONFIG.open("r", encoding="utf-8") as handle:
         config = yaml.safe_load(handle) or {}
     if path:
         with Path(path).open("r", encoding="utf-8") as handle:
-            overrides = yaml.safe_load(handle) or {}
-        if not isinstance(overrides, dict):
+            file_overrides = yaml.safe_load(handle) or {}
+        if not isinstance(file_overrides, dict):
             raise ValueError("配置文件的顶层必须是键值映射。")
-        config = _merge(config, overrides)
+        config = _merge(config, file_overrides)
+    if overrides is not None:
+        if not isinstance(overrides, dict):
+            raise ValueError("配置覆盖值必须是键值映射。")
+        config = _merge(config, deepcopy(overrides))
     validate_config(config)
     return deepcopy(config)
 

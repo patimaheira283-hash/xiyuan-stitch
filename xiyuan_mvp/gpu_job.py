@@ -38,7 +38,7 @@ def run_job(job, output, *, use_ai=True, pipeline_factory=StitchPipeline):
     config = load_config()
     try:
         with tempfile.TemporaryDirectory(prefix="xiyuan-job-") as temporary:
-            root = Path(temporary)
+            root = Path(temporary).resolve()
             safe_extract(job, root)
             config = load_config(root / "config.yaml")
             if use_ai:

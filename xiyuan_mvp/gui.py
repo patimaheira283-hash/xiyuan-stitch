@@ -714,8 +714,7 @@ class MainWindow(QMainWindow):
         if path:
             try:
                 result, report = load_run(path)
-                self.config = load_config()
-                self.config.update(report["config"])
+                self.config = load_config(overrides=report["config"])
                 self.pipeline = StitchPipeline(self.config)
                 self.image_a_path = str(Path(path).parent / "input_a.png")
                 self.image_b_path = str(Path(path).parent / "input_b.png")
