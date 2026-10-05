@@ -1,0 +1,255 @@
+{
+  "selected_before_evaluation": true,
+  "selection": "two scenes per repository; hash order; exclude prior v4 scenes and exact image duplicates",
+  "limitations": "Scene IDs and hashes do not rule out all cross-repository near-duplicates. Sources were present in the local library; not previously used for this pipeline quality development.",
+  "cases": [
+    {
+      "id": "spw-14-2b99f67a",
+      "scene": "spw/14",
+      "title": "SPW · 14 · 14_l + 14_r",
+      "files": [
+        {
+          "file": "originals/spw/TwoImage/Images/14/14_l.jpg",
+          "sha256": "2dcd1f249be052dab94cf8bea9a941023eacdebeb79ccdea553573e4a3414387"
+        },
+        {
+          "file": "originals/spw/TwoImage/Images/14/14_r.jpg",
+          "sha256": "43b2251dadc5044802d3bb7f61ec7d35f27a60a1e8336c72d0b3f282abcf0a84"
+        }
+      ],
+      "kind": "real_capture",
+      "reference": null,
+      "source": {
+        "id": "spw",
+        "title": "SPW · 单视角结构",
+        "author": "tlliao",
+        "source_url": "https://github.com/tlliao/Single-perspective-warps",
+        "repository": "tlliao/Single-perspective-warps",
+        "commit": "0e9e459b60a3e259190bb0066204560d1c128480",
+        "license": "未提供单独的数据许可证",
+        "license_evidence": "provenance/tlliao__Single-perspective-warps/README.md",
+        "kind": "github_dataset",
+        "image_count": 86,
+        "case_count": 43,
+        "scene_count": 43
+      }
+    },
+    {
+      "id": "spw-39-9d1f887f",
+      "scene": "spw/39",
+      "title": "SPW · 39 · 39_l + 39_r",
+      "files": [
+        {
+          "file": "originals/spw/TwoImage/Images/39/39_l.jpg",
+          "sha256": "356245b104f6f0ebca66011494653de0a154281c7a9b696a5908469b2cfe5652"
+        },
+        {
+          "file": "originals/spw/TwoImage/Images/39/39_r.jpg",
+          "sha256": "42db9f749cc7751dbda97e366aa3cd77bb51cd2ed1fa82533654f9b395756941"
+        }
+      ],
+      "kind": "real_capture",
+      "reference": null,
+      "source": {
+        "id": "spw",
+        "title": "SPW · 单视角结构",
+        "author": "tlliao",
+        "source_url": "https://github.com/tlliao/Single-perspective-warps",
+        "repository": "tlliao/Single-perspective-warps",
+        "commit": "0e9e459b60a3e259190bb0066204560d1c128480",
+        "license": "未提供单独的数据许可证",
+        "license_evidence": "provenance/tlliao__Single-perspective-warps/README.md",
+        "kind": "github_dataset",
+        "image_count": 86,
+        "case_count": 43,
+        "scene_count": 43
+      }
+    },
+    {
+      "id": "lpc-rew-campussquare-b6f0c55c",
+      "scene": "lpc/REW_campussquare",
+      "title": "LPC · REW_campussquare · campussquare_01 + campussquare_02",
+      "files": [
+        {
+          "file": "originals/lpc/Imgs/REW_campussquare/campussquare_01.jpg",
+          "sha256": "e168e1121136d892b78aedba430a311b9d192fe9d6a4c7116af404c9970d4585"
+        },
+        {
+          "file": "originals/lpc/Imgs/REW_campussquare/campussquare_02.jpg",
+          "sha256": "5c9b52b2520829cb91c80094b28f815aea56b3fa52b1b1cb267d10b8b50a03ea"
+        }
+      ],
+      "kind": "real_capture",
+      "reference": null,
+      "source": {
+        "id": "lpc",
+        "title": "LPC · 大视差与线条",
+        "author": "dut-media-lab",
+        "source_url": "https://github.com/dut-media-lab/Image-Stitching",
+        "repository": "dut-media-lab/Image-Stitching",
+        "commit": "2c1564d156e34f9137229875529f52000a135a30",
+        "license": "未提供单独的数据许可证",
+        "license_evidence": "provenance/dut-media-lab__Image-Stitching/README.md",
+        "kind": "github_dataset",
+        "image_count": 108,
+        "case_count": 54,
+        "scene_count": 54
+      }
+    },
+    {
+      "id": "lpc-sportfield1-5b994b3f",
+      "scene": "lpc/sportfield1",
+      "title": "LPC · sportfield1 · 1 + 2",
+      "files": [
+        {
+          "file": "originals/lpc/Imgs/sportfield1/1.JPG",
+          "sha256": "780e486925ebcec9f0353d9f025023c583ec763a2beab871f840c0c3a9b3c9bc"
+        },
+        {
+          "file": "originals/lpc/Imgs/sportfield1/2.JPG",
+          "sha256": "7297b40cd6c1f55385d7291ed89b2a4e9d638704dd027b3865e8d60c467356e8"
+        }
+      ],
+      "kind": "real_capture",
+      "reference": null,
+      "source": {
+        "id": "lpc",
+        "title": "LPC · 大视差与线条",
+        "author": "dut-media-lab",
+        "source_url": "https://github.com/dut-media-lab/Image-Stitching",
+        "repository": "dut-media-lab/Image-Stitching",
+        "commit": "2c1564d156e34f9137229875529f52000a135a30",
+        "license": "未提供单独的数据许可证",
+        "license_evidence": "provenance/dut-media-lab__Image-Stitching/README.md",
+        "kind": "github_dataset",
+        "image_count": 108,
+        "case_count": 54,
+        "scene_count": 54
+      }
+    },
+    {
+      "id": "rew-fcase-foundation-5171e754",
+      "scene": "rew/fcase_foundation",
+      "title": "REW · fcase_foundation · foundation_01 + foundation_02",
+      "files": [
+        {
+          "file": "originals/rew/two_views/images/fcase_foundation/foundation_01.JPG",
+          "sha256": "c0300e9fd2af4fa308537f14132b24428652884918d167ff740bd19a722c7ee6"
+        },
+        {
+          "file": "originals/rew/two_views/images/fcase_foundation/foundation_02.JPG",
+          "sha256": "7dced48b1e2111ed495f90afe867b08ebb12628022d85433980d36229f5558aa"
+        }
+      ],
+      "kind": "real_capture",
+      "reference": null,
+      "source": {
+        "id": "rew",
+        "title": "REW · 视差容忍",
+        "author": "gain2217",
+        "source_url": "https://github.com/gain2217/Robust_Elastic_Warping",
+        "repository": "gain2217/Robust_Elastic_Warping",
+        "commit": "36ad3cb2f709fbea17225642ea1fa7b083924fd9",
+        "license": "未提供单独的数据许可证",
+        "license_evidence": "provenance/gain2217__Robust_Elastic_Warping/README.md",
+        "kind": "github_dataset",
+        "image_count": 72,
+        "case_count": 12,
+        "scene_count": 36
+      }
+    },
+    {
+      "id": "rew-rew-theater-18f4b187",
+      "scene": "rew/REW_theater",
+      "title": "REW · REW_theater · theater_01 + theater_02",
+      "files": [
+        {
+          "file": "originals/rew/two_views/images/REW_theater/theater_01.JPG",
+          "sha256": "26843abec415ef3fc010bbe3ccc76a7ecb62d01faa42c002531e2007483b209d"
+        },
+        {
+          "file": "originals/rew/two_views/images/REW_theater/theater_02.JPG",
+          "sha256": "d1749bbf2cf2df8657a37f54beb9e56fbbc0890d4cff6f80a1d5eb95a6c68300"
+        }
+      ],
+      "kind": "real_capture",
+      "reference": null,
+      "source": {
+        "id": "rew",
+        "title": "REW · 视差容忍",
+        "author": "gain2217",
+        "source_url": "https://github.com/gain2217/Robust_Elastic_Warping",
+        "repository": "gain2217/Robust_Elastic_Warping",
+        "commit": "36ad3cb2f709fbea17225642ea1fa7b083924fd9",
+        "license": "未提供单独的数据许可证",
+        "license_evidence": "provenance/gain2217__Robust_Elastic_Warping/README.md",
+        "kind": "github_dataset",
+        "image_count": 72,
+        "case_count": 12,
+        "scene_count": 36
+      }
+    },
+    {
+      "id": "ges-ges-15-garden-2-2a8b6d94",
+      "scene": "ges/GES-15_Garden-2",
+      "title": "GES · GES-15_Garden-2 · 4 + 5",
+      "files": [
+        {
+          "file": "originals/ges/Dataset/GES-15_Garden-2/4.jpg",
+          "sha256": "613d58ae9c97fab86938c83a725c90597c998a86453f9701730bb25d3d19b40a"
+        },
+        {
+          "file": "originals/ges/Dataset/GES-15_Garden-2/5.jpg",
+          "sha256": "85b982247f58c9a1814f398b283f7a3549b22c30f52166c7a0af776c6c65309d"
+        }
+      ],
+      "kind": "real_capture",
+      "reference": null,
+      "source": {
+        "id": "ges",
+        "title": "GES-50 · 多视图结构",
+        "author": "flowerDuo",
+        "source_url": "https://github.com/flowerDuo/GES-GSP-Stitching",
+        "repository": "flowerDuo/GES-GSP-Stitching",
+        "commit": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+        "license": "未提供单独的数据许可证",
+        "license_evidence": "provenance/flowerDuo__GES-GSP-Stitching/README.md",
+        "kind": "github_dataset",
+        "image_count": 340,
+        "case_count": 361,
+        "scene_count": 50
+      }
+    },
+    {
+      "id": "ges-ges-08-olympicbuilding-1-358bdb85",
+      "scene": "ges/GES-08_OlympicBuilding-1",
+      "title": "GES · GES-08_OlympicBuilding-1 · 00 + 01",
+      "files": [
+        {
+          "file": "originals/ges/Dataset/GES-08_OlympicBuilding-1/00.jpg",
+          "sha256": "9667aa2544b7168d52ad13d50e46e90966d4846381e50300a62f818a5d4b1074"
+        },
+        {
+          "file": "originals/ges/Dataset/GES-08_OlympicBuilding-1/01.jpg",
+          "sha256": "bc58b7697329f9848c64ac068fb3db004f997e8301dabf24a1415de76f7db4bd"
+        }
+      ],
+      "kind": "real_capture",
+      "reference": null,
+      "source": {
+        "id": "ges",
+        "title": "GES-50 · 多视图结构",
+        "author": "flowerDuo",
+        "source_url": "https://github.com/flowerDuo/GES-GSP-Stitching",
+        "repository": "flowerDuo/GES-GSP-Stitching",
+        "commit": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+        "license": "未提供单独的数据许可证",
+        "license_evidence": "provenance/flowerDuo__GES-GSP-Stitching/README.md",
+        "kind": "github_dataset",
+        "image_count": 340,
+        "case_count": 361,
+        "scene_count": 50
+      }
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "created_utc": "2026-09-10T08:21:42.547939+00:00",
+  "metrics": {
+    "feature_method": "known_crop_transform; isolates composition",
+    "clear_fusion_method": "adaptive_detail",
+    "clear_algorithm_revision": "adaptive-noise-v3",
+    "clear_structural_agreement": 0.47177654504776,
+    "clear_clarity_a": 0.9655745011604712,
+    "clear_clarity_b": 1.0430424321282952,
+    "clear_clarity_ratio": 0.9264341790945174,
+    "clear_noise_a": 1.2355018854141235,
+    "clear_noise_b": 1.7297025918960571,
+    "clear_estimated_noise_fraction": 0.004846544708843167,
+    "clear_selection": "balanced; preserve feather",
+    "clear_fusion_seconds": 0.04221550000511343,
+    "clear_fusion_enabled": true,
+    "use_ai": false,
+    "total_seconds": 0.05036380000092322
+  },
+  "config": {
+    "registration": {
+      "method": "sift",
+      "loftr_pretrained": "outdoor",
+      "loftr_device": "cpu",
+      "loftr_max_size": 640,
+      "loftr_confidence": 0.2,
+      "max_feature_size": 1600,
+      "ratio_test": 0.75,
+      "ransac_threshold": 4.0,
+      "min_matches": 12,
+      "min_inliers": 8,
+      "min_inlier_ratio": 0.25,
+      "min_overlap_ratio": 0.1,
+      "seed": 2026
+    },
+    "mask": {
+      "method": "min_cost",
+      "seam_width": 64,
+      "feather_radius": 24
+    },
+    "inpainting": {
+      "engine": "neural_alignment",
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+      "revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+      "variant": "fp16",
+      "controlnet": "none",
+      "controlnet_scale": 0.65,
+      "canny_low": 100,
+      "canny_high": 200,
+      "use_lcm": false,
+      "lcm_model_id": "latent-consistency/lcm-lora-sdv1-5",
+      "lcm_revision": "cf2fced511dbe7e26c8d1d397e728fbab875db4b",
+      "device": "auto",
+      "allow_cpu": false,
+      "cpu_threads": 8,
+      "local_files_only": true,
+      "cache_dir": "models/hub",
+      "patch_size": 512,
+      "context_pixels": 192,
+      "steps": 20,
+      "guidance_scale": 5.0,
+      "strength": 0.5,
+      "seed": 2026,
+      "prompt": "seamless continuation of the surrounding texture, preserve the original structure and lighting",
+      "negative_prompt": "visible seam, discontinuity, distorted structure, artifacts, text, watermark"
+    },
+    "blend": {
+      "feather_radius": 24,
+      "color_match": true,
+      "ai_opacity": 1.0
+    },
+    "refinement": {
+      "enabled": false,
+      "exposure": true,
+      "local_flow": true,
+      "flow_min_mae": 2.0,
+      "max_flow_pixels": 16,
+      "seam_softness": 8
+    },
+    "neural_alignment": {
+      "method": "raft_large",
+      "preserve_detail": true,
+      "device": "cpu",
+      "max_size": 512,
+      "iterations": 12,
+      "consistency": 1.5,
+      "max_flow": 24,
+      "exposure": true
+    },
+    "clear_fusion": {
+      "enabled": true,
+      "mode": "adaptive_detail",
+      "detail_scale": 9,
+      "guard": true,
+      "guard_threshold": 0.985,
+      "clarity_margin": 1.1,
+      "transition_width": 16,
+      "noise_guard": true
+    }
+  },
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "xiyuan-stitch": "0.4.0",
+      "numpy": "2.5.3",
+      "opencv-python": "5.0.0.93",
+      "Pillow": "12.3.0",
+      "PyYAML": "6.0.3",
+      "PySide6": "6.11.2",
+      "torch": "2.14.0",
+      "torchvision": "0.29.0",
+      "diffusers": "0.40.0",
+      "transformers": "5.16.1",
+      "accelerate": "1.14.0",
+      "lpips": "0.1.4"
+    }
+  },
+  "homography_b_to_a": [
+    [
+      1.0,
+      0.0,
+      153.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "canvas_transform": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "mask_bbox": [
+    153,
+    0,
+    358,
+    512
+  ],
+  "mask_method": "custom",
+  "artifacts": {
+    "input_a": {
+      "file": "input_a.png",
+      "sha256": "d945ff2fc5360f3bb42950602030408a56ffbeb758110992cca92154d2385b6a"
+    },
+    "input_b": {
+      "file": "input_b.png",
+      "sha256": "14aff857c45ad71a7f844d05c9ddd1b451c81470c7b11953a37fca2fc499693a"
+    },
+    "01_matches": {
+      "file": "01_matches.png",
+      "sha256": "35770248f0165fc618d2ea2cd971c1d35669dfefbae021114cd2520b577e53f2"
+    },
+    "02_warped_a": {
+      "file": "02_warped_a.png",
+      "sha256": "2015dcc42d82b03dfe00196642671d4d2c6625c1063e0fbb18979e3e107b3b06"
+    },
+    "03_warped_b": {
+      "file": "03_warped_b.png",
+      "sha256": "0affa2f8e0aa02f8137fc9fceb6cf642126cf4dc65e3c28d0245b33e6e47ff2b"
+    },
+    "04_overlap_mask": {
+      "file": "04_overlap_mask.png",
+      "sha256": "df19a9290373f12403b3729db5e3b9c21c7d187dbac7f0f1e8fce1e195cba532"
+    },
+    "05_seam_mask": {
+      "file": "05_seam_mask.png",
+      "sha256": "df19a9290373f12403b3729db5e3b9c21c7d187dbac7f0f1e8fce1e195cba532"
+    },
+    "05_soft_mask": {
+      "file": "05_soft_mask.png",
+      "sha256": "bc71dac824af47017fbebd62ff39d222c95fdc362396fe03d763d7e865b4db63"
+    },
+    "06_traditional": {
+      "file": "06_traditional.png",
+      "sha256": "e5941995e1de2ca7dd38b141763076dfc7b65a5e856e7acb72b73e844d8e880c"
+    },
+    "mask_a": {
+      "file": "mask_a.png",
+      "sha256": "b83b499c46a399eadbbefceaf62d776f9aa53895cdb88f29567d53d7e0b829c1"
+    },
+    "mask_b": {
+      "file": "mask_b.png",
+      "sha256": "c9fd0aea5f568d4d4a4c76c21534eb8c407169e48a11ca21ccbe87f9f99d9212"
+    },
+    "06_poisson": {
+      "file": "06_poisson.png",
+      "sha256": "25021aa8ead7cd2b3b5e06445e6b00de6e8ceca827ed6ffa63a28fa20bc2d47b"
+    },
+    "repair_region": {
+      "file": "repair_region.png",
+      "sha256": "df19a9290373f12403b3729db5e3b9c21c7d187dbac7f0f1e8fce1e195cba532"
+    },
+    "06_initial": {
+      "file": "06_initial.png",
+      "sha256": "e5941995e1de2ca7dd38b141763076dfc7b65a5e856e7acb72b73e844d8e880c"
+    }
+  },
+  "extra": {}
+}

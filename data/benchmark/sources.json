@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "id": "brick",
+      "file": "sources/brick.png",
+      "sha256": "9c07a30f9f13928ed8f951e567ffec6dbb0e85b61d7836a45a87e112071fd850",
+      "source_url": "https://cc0textures.com/view.php?tex=Bricks25",
+      "license": "CC0-1.0",
+      "packaged_by": "scikit-image",
+      "loader_documentation": "Brick wall.\n\nReturns\n-------\nbrick : (512, 512) uint8 image\n    A small section of a brick wall.\n\nNotes\n-----\nThe original image was downloaded from\n`CC0Textures <https://cc0textures.com/view.php?tex=Bricks25>`_ and licensed\nunder the Creative Commons CC0 License.\n\nA perspective transform was then applied to the image, prior to\nrotating it by 90 degrees, cropping and scaling it to obtain the final\nimage."
+    },
+    {
+      "id": "grass",
+      "file": "sources/grass.png",
+      "sha256": "0b326166b761b1c6ca697c0689244701881b4c626f1803742e56b7b73cb1c825",
+      "source_url": "https://www.deviantart.com/linolafett/art/Grass-01-434853879",
+      "license": "CC0-1.0",
+      "packaged_by": "scikit-image",
+      "loader_documentation": "Grass.\n\nReturns\n-------\ngrass : (512, 512) uint8 image\n    Some grass.\n\nNotes\n-----\nThe original image was downloaded from\n`DeviantArt <https://www.deviantart.com/linolafett/art/Grass-01-434853879>`__\nand licensed under the Creative Commons CC0 License.\n\nThe downloaded image was cropped to include a region of ``(512, 512)``\npixels around the top left corner, converted to grayscale, then to uint8\nprior to saving the result in PNG format."
+    },
+    {
+      "id": "gravel",
+      "file": "sources/gravel.png",
+      "sha256": "33efa15aec2798775223ba368805ca44f509453063696e197a86ae731d10e8cf",
+      "source_url": "https://cc0textures.com/view.php?tex=Gravel04",
+      "license": "CC0-1.0",
+      "packaged_by": "scikit-image",
+      "loader_documentation": "Gravel\n\nReturns\n-------\ngravel : (512, 512) uint8 image\n    Grayscale gravel sample.\n\nNotes\n-----\nThe original image was downloaded from\n`CC0Textures <https://cc0textures.com/view.php?tex=Gravel04>`__ and\nlicensed under the Creative Commons CC0 License.\n\nThe downloaded image was then rescaled to ``(1024, 1024)``, then the\ntop left ``(512, 512)`` pixel region  was cropped prior to converting the\nimage to grayscale and uint8 data type. The result was saved using the\nPNG format."
+    }
+  ]
+}

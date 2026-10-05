@@ -1,0 +1,5 @@
+# CPU tests: no model downloads or provider credentials required.
+-r windows-base.txt
+pytest==9.1.1
+requests==2.34.2
+scikit-image==0.26.0

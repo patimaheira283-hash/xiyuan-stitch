@@ -1,0 +1,29 @@
+registration:
+  max_feature_size: 1600
+  ratio_test: 0.75
+  ransac_threshold: 4.0
+  min_matches: 12
+  min_inliers: 8
+  min_inlier_ratio: 0.25
+  min_overlap_ratio: 0.10
+
+mask:
+  seam_width: 64
+  feather_radius: 24
+
+inpainting:
+  model_id: stable-diffusion-v1-5/stable-diffusion-inpainting
+  device: auto
+  allow_cpu: false
+  patch_size: 512
+  context_pixels: 192
+  steps: 20
+  guidance_scale: 5.0
+  strength: 0.5
+  seed: 2026
+  prompt: seamless continuation of the surrounding texture, preserve the original structure and lighting
+  negative_prompt: visible seam, discontinuity, distorted structure, artifacts, text, watermark
+
+blend:
+  feather_radius: 24
+  color_match: true

@@ -1,0 +1,117 @@
+{
+  "model_id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+  "revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+  "url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-inpainting/tree/8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+  "license": "creativeml-openrail-m",
+  "weights_downloaded": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 1753
+    },
+    {
+      "path": "README.md",
+      "size": 15107
+    },
+    {
+      "path": "config.json",
+      "size": 748
+    },
+    {
+      "path": "feature_extractor/preprocessor_config.json",
+      "size": 342
+    },
+    {
+      "path": "model_index.json",
+      "size": 548
+    },
+    {
+      "path": "safety_checker/config.json",
+      "size": 4777
+    },
+    {
+      "path": "safety_checker/model.fp16.safetensors",
+      "size": 608018440
+    },
+    {
+      "path": "safety_checker/pytorch_model.bin",
+      "size": 1216061799
+    },
+    {
+      "path": "safety_checker/pytorch_model.fp16.bin",
+      "size": 608103564
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "size": 313
+    },
+    {
+      "path": "sd-v1-5-inpainting.ckpt",
+      "size": 4265437280
+    },
+    {
+      "path": "text_encoder/config.json",
+      "size": 617
+    },
+    {
+      "path": "text_encoder/model.fp16.safetensors",
+      "size": 246144864
+    },
+    {
+      "path": "text_encoder/pytorch_model.bin",
+      "size": 492305335
+    },
+    {
+      "path": "text_encoder/pytorch_model.fp16.bin",
+      "size": 246187076
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "size": 524619
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "size": 472
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "size": 806
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "size": 1059962
+    },
+    {
+      "path": "unet/config.json",
+      "size": 748
+    },
+    {
+      "path": "unet/diffusion_pytorch_model.bin",
+      "size": 3438412325
+    },
+    {
+      "path": "unet/diffusion_pytorch_model.fp16.bin",
+      "size": 1719356693
+    },
+    {
+      "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "size": 1719154104
+    },
+    {
+      "path": "vae/config.json",
+      "size": 552
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.bin",
+      "size": 334707217
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.fp16.bin",
+      "size": 167405651
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "size": 167335342
+    }
+  ]
+}

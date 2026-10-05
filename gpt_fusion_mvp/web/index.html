@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>直接融合 · 曦源实验室</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><a href="/" class="brand">曦源 <span>/ 图像实验室</span></a><span class="connection" id="connection">正在读取配置…</span></header>
+<main>
+<p class="share-notice" id="share-notice" hidden></p>
+<div class="intro"><div><p class="eyebrow">EXPERIMENT 01</p><h1>两张照片，直接交给 GPT。</h1><p>观察它能否消除接缝，同时保留原来的内容。</p></div><div class="flow">选择两张图 <b>→</b> 直接融合 <b>→</b> 对照原图</div></div>
+<div class="workspace">
+<aside>
+<h2>测试素材</h2><p class="hint" id="library-count">正在读取素材库…</p>
+<div class="library-filters"><label>搜索场景<input id="case-search" type="search" placeholder="如 library、建筑、视差"></label><label>来源<select id="source-filter"><option value="">全部来源</option></select></label><label>测试范围<select id="suite-filter"><option value="recommended">推荐先试</option><option value="all">全部样例</option><option value="real">真实拍摄</option><option value="controlled">有完整参考图</option><option value="review">配对待目视检查</option></select></label></div>
+<p class="hint" id="filter-count"></p><div id="cases" class="case-list"></div><div class="pagination"><button id="page-prev" class="text-button">上一页</button><span id="page-number"></span><button id="page-next" class="text-button">下一页</button></div>
+<details class="upload"><summary>使用自己的两张图片</summary><label>左图<input id="left-upload" type="file" accept="image/png,image/jpeg,image/webp"></label><label>右图<input id="right-upload" type="file" accept="image/png,image/jpeg,image/webp"></label><p class="hint">只在点击融合后，将这两张图发送到当前服务商。</p><button id="use-uploads" class="secondary">使用这两张图片</button></details>
+</aside>
+<section class="stage">
+<div class="section-label"><h2 id="case-title">正在载入素材</h2><span id="case-kind">受控裁剪测试</span></div>
+<div class="input-pair"><figure><img id="left-image" alt="输入照片 1"><figcaption>输入 1</figcaption></figure><figure><img id="right-image" alt="输入照片 2"><figcaption>输入 2</figcaption></figure></div>
+<p class="hint" id="case-provenance"></p>
+<p class="hint" id="case-note"></p>
+<div class="controls"><label>请求的图像模型<select id="model"><option value="gpt-image-2.5-sunburst">GPT Image 2.5 · Sunburst</option><option value="gpt-image-2.5-flare">GPT Image 2.5 · Flare</option></select></label><label>请求质量<select id="quality"><option value="high">高</option><option value="medium">中</option><option value="low">低</option></select></label><label>请求尺寸<select id="size"><option>1536x1024</option><option>1024x1024</option><option>2048x1024</option></select></label></div>
+<details class="prompt"><summary>查看或修改融合要求</summary><textarea id="prompt" rows="8" aria-label="融合提示词"></textarea></details>
+<div class="action-row"><p>每次融合会调用当前服务商并产生用量费用。</p><button id="dry-run" class="secondary">仅检查请求</button><button id="generate" class="primary">开始融合 <span>↗</span></button></div>
+<p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+<section class="result-section"><div class="section-label"><h2>结果与原图</h2><a id="download" hidden download="fusion.png">下载原始结果 ↓</a></div><p id="result-meta" class="hint">选择一条已完成的记录，或开始第一次融合。</p>
+<div id="empty-result" class="empty-result">成图将在这里出现。<span>失败请求也会保留记录，便于定位问题。</span></div>
+<div id="comparison" hidden><div class="compare-toolbar"><button id="show-output" class="secondary">生成结果</button><button id="show-reference" class="secondary">完整参考图</button><button id="show-split" class="secondary">滑动对照</button><label id="slider-label">对照位置<input id="slider" type="range" min="0" max="100" value="50"></label></div><div class="compare-frame"><img id="result-image" alt="GPT 融合结果"><img id="reference-image" alt="完整参考图，仅用于评估"></div><p id="compare-note" class="hint"></p></div>
+<div id="metrics" class="metrics"></div><p id="output-warnings" class="hint"></p>
+</section>
+</section>
+</div>
+<section class="history"><div class="section-label"><h2>实验记录</h2><button id="refresh" class="text-button">刷新记录 ↻</button></div><div class="table-scroll"><table><thead><tr><th>素材</th><th>状态</th><th>请求模型</th><th>耗时</th><th>SSIM</th><th>记录</th></tr></thead><tbody id="runs"></tbody></table></div></section>
+<footer><p id="evaluation-scope">测试说明：受控裁剪样例有完整参考图；真实拍摄样例没有完整真值，适合观察接缝、重影、物体数量和结构保真。参考图不发送给模型。SSIM 需结合目视判断。</p><details><summary>素材来源与许可</summary><div id="sources"></div></details><p>服务商来自 CC Switch 当前 Codex 配置。密钥只在本机后端读取，不传入网页。请求的模型名不等同于独立验证了上游实际模型。</p></footer>
+</main></body></html>

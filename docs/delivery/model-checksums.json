@@ -1,0 +1,17 @@
+[
+  {
+    "file": "loftr_outdoor.ckpt",
+    "sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+    "bytes": 46341978
+  },
+  {
+    "file": "raft_large_C_T_SKHT_V2-ff5fadd5.pth",
+    "sha256": "ff5fadd56d26b40647388883af1547351ea17868b765c05b27231e72dd16a322",
+    "bytes": 21106607
+  },
+  {
+    "file": "raft_small_C_T_V2-01064c6d.pth",
+    "sha256": "01064c6dba73b0fc9fc8edf772248560a00a3acfd62ac6677e9eeebad9680e27",
+    "bytes": 4006189
+  }
+]

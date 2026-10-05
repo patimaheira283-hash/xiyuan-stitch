@@ -1,0 +1,322 @@
+[
+  {
+    "name": "PySide6",
+    "version": "6.11.2",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "home_page": null,
+    "files": [
+      "PySide6/pyside6-6.11.2.dist-info/licenses/LicenseRef-Qt-Commercial.txt"
+    ]
+  },
+  {
+    "name": "PySide6_Essentials",
+    "version": "6.11.2",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "home_page": null,
+    "files": [
+      "PySide6_Essentials/pyside6_essentials-6.11.2.dist-info/licenses/LicenseRef-Qt-Commercial.txt"
+    ]
+  },
+  {
+    "name": "PySide6_Addons",
+    "version": "6.11.2",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "home_page": null,
+    "files": [
+      "PySide6_Addons/pyside6_addons-6.11.2.dist-info/licenses/LicenseRef-Qt-Commercial.txt"
+    ]
+  },
+  {
+    "name": "shiboken6",
+    "version": "6.11.2",
+    "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only",
+    "home_page": null,
+    "files": [
+      "shiboken6/shiboken6-6.11.2.dist-info/licenses/LicenseRef-Qt-Commercial.txt"
+    ]
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.3",
+    "license": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "home_page": null,
+    "files": [
+      "numpy/numpy-2.5.3.dist-info/licenses/LICENSE.txt",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/ma/LICENSE",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/random/LICENSE.md",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "numpy/numpy-2.5.3.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+      "numpy/numpy/_core/include/numpy/random/LICENSE.txt",
+      "numpy/numpy/ma/LICENSE",
+      "numpy/numpy/random/LICENSE.md"
+    ]
+  },
+  {
+    "name": "opencv-python",
+    "version": "5.0.0.93",
+    "license": "Apache 2.0",
+    "home_page": "https://github.com/opencv/opencv-python",
+    "files": [
+      "opencv-python/cv2/LICENSE-3RD-PARTY.txt",
+      "opencv-python/cv2/LICENSE.txt",
+      "opencv-python/opencv_python-5.0.0.93.dist-info/LICENSE-3RD-PARTY.txt",
+      "opencv-python/opencv_python-5.0.0.93.dist-info/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "Pillow",
+    "version": "12.3.0",
+    "license": "MIT-CMU",
+    "home_page": null,
+    "files": [
+      "Pillow/pillow-12.3.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "license": "MIT",
+    "home_page": "https://pyyaml.org/",
+    "files": [
+      "PyYAML/pyyaml-6.0.3.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "PyInstaller",
+    "version": "6.22.2",
+    "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "home_page": null,
+    "files": [
+      "PyInstaller/pyinstaller-6.22.2.dist-info/licenses/COPYING.txt"
+    ]
+  },
+  {
+    "name": "torch",
+    "version": "2.14.0+cpu",
+    "license": "Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND MIT",
+    "home_page": null,
+    "files": [
+      "torch/torch-2.14.0+cpu.dist-info/licenses/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/FP16/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/FXdiv/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/NNPACK/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/NVTX/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/NVTX/docs/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/NVTX/python/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/NVTX/rust/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/NVTX/tools/docs/github-markdown-css/license",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/VulkanMemoryAllocator/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/XNNPACK/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/aiter/3rdparty/composable_kernel/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/aiter/3rdparty/composable_kernel/docs/license.rst",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/aiter/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/benchmark/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/composable_kernel/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/composable_kernel/docs/license.rst",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/cpp-httplib/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/cpuinfo/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/cpuinfo/deps/clog/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/cudnn_frontend/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/cutlass/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/cutlass/python/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/external/composable_kernel/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/external/composable_kernel/docs/license.rst",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/external/cpuinfo/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/external/cpuinfo/deps/clog/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/external/cutlass/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/external/cutlass/python/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/external/googletest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/external/hipify_torch/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/fbgemm_gpu/docs/src/general/License.rst",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/fbgemm_gpu/experimental/hstu/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/fbgemm_gpu/src/quantize_ops/mx/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fbgemm/fbgemm_gpu/test/quantize/mx/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/csrc/composable_kernel/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/csrc/composable_kernel/docs/license.rst",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/csrc/cutlass/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/csrc/cutlass/python/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/flash_attn/cute/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/third_party/aiter/3rdparty/composable_kernel/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/third_party/aiter/3rdparty/composable_kernel/docs/license.rst",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flash-attention/third_party/aiter/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flatbuffers/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flatbuffers/dart/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/flatbuffers/swift/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/fmt/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/gemmlowp/gemmlowp/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/gloo/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/googletest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/ideep/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/ideep/mkl-dnn/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/ideep/mkl-dnn/third_party/gtest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/ideep/mkl-dnn/third_party/opencl/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/kineto/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/kineto/libkineto/third_party/dynolog_headers/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/kineto/libkineto/third_party/fmt/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/kineto/libkineto/third_party/googletest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/llvm-openmp/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mimalloc/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/miniz-3.0.2/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mslk/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mslk/external/composable_kernel/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mslk/external/composable_kernel/docs/license.rst",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mslk/external/cutlass/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mslk/external/cutlass/python/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mslk/external/googletest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mslk/external/hipify_torch/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/mslk/mslk/attention/flash_attn/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/onnx/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/onnx/third_party/pybind11/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/perfetto/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/protobuf/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/protobuf/third_party/benchmark/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/protobuf/third_party/googletest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/protobuf/third_party/googletest/googlemock/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/protobuf/third_party/googletest/googlemock/scripts/generator/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/protobuf/third_party/googletest/googletest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/protobuf/third_party/utf8_range/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/psimd/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/pthreadpool/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/pybind11/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/python-peachpy/LICENSE.rst",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/sleef/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/LICENSE.txt",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/third_party/googletest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/third_party/googletest/googlemock/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/third_party/googletest/googlemock/scripts/generator/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/third_party/googletest/googletest/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/third_party/libnop/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/third_party/libuv/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/third_party/pybind11/LICENSE",
+      "torch/torch-2.14.0+cpu.dist-info/licenses/third_party/tensorpipe/third_party/pybind11/tools/clang/LICENSE.TXT",
+      "torch/torch/_vendor/packaging/LICENSE",
+      "torch/torch/_vendor/packaging/LICENSE.APACHE",
+      "torch/torch/_vendor/packaging/LICENSE.BSD",
+      "torch/torch/_vendor/quack/LICENSE"
+    ]
+  },
+  {
+    "name": "torchvision",
+    "version": "0.29.0+cpu",
+    "license": "BSD",
+    "home_page": "https://github.com/pytorch/vision",
+    "files": [
+      "torchvision/torchvision-0.29.0+cpu.dist-info/LICENSE",
+      "torchvision/torchvision-0.29.0+cpu.dist-info/LICENSE"
+    ]
+  },
+  {
+    "name": "kornia",
+    "version": "0.8.1",
+    "license": "Apache-2.0",
+    "home_page": null,
+    "files": [
+      "kornia/kornia-0.8.1.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "kornia-rs",
+    "version": "0.2.0",
+    "license": null,
+    "home_page": "http://kornia.org",
+    "files": [
+      "kornia-rs/kornia_rs-0.2.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "scikit-image",
+    "version": "0.26.0",
+    "license": "Files: *\n Copyright: 2009-2022 the scikit-image team\n License: BSD-3-Clause\n\n Files: doc/source/themes/scikit-image/layout.html\n Copyright: 2007-2010 the Sphinx team\n License: BSD-3-Clause\n\n Files: skimage/feature/_canny.py\n        skimage/filters/edges.py\n        skimage/filters/_rank_order.py\n        skimage/morphology/_skeletonize.py\n        skimage/morphology/tests/test_watershed.py\n        skimage/morphology/watershed.py\n        skimage/segmentation/heap_general.pxi\n        skimage/segmentation/heap_watershed.pxi\n        skimage/segmentation/_watershed.py\n        skimage/segmentation/_watershed_cy.pyx\n Copyright: 2003-2009 Massachusetts Institute of Technology\n            2009-2011 Broad Institute\n            2003 Lee Kamentsky\n            2003-2005 Peter J. Verveer\n License: BSD-3-Clause\n\n Files: skimage/filters/thresholding.py\n        skimage/graph/_mcp.pyx\n        skimage/graph/heap.pyx\n Copyright: 2009-2015 Board of Regents of the University of\n            Wisconsin-Madison, Broad Institute of MIT and Harvard,\n            and Max Planck Institute of Molecular Cell Biology and\n            Genetics\n            2009 Zachary Pincus\n            2009 Almar Klein\n License: BSD-2-Clause\n\n File: skimage/morphology/grayreconstruct.py\n       skimage/morphology/tests/test_reconstruction.py\n Copyright: 2003-2009 Massachusetts Institute of Technology\n            2009-2011 Broad Institute\n            2003 Lee Kamentsky\n License: BSD-3-Clause\n\n File: skimage/morphology/_grayreconstruct.pyx\n Copyright: 2003-2009 Massachusetts Institute of Technology\n            2009-2011 Broad Institute\n            2003 Lee Kamentsky\n            2022 Gregory Lee (added a 64-bit integer variant for large images)\n License: BSD-3-Clause\n\n File: skimage/segmentation/_expand_labels.py\n Copyright: 2020 Broad Institute\n            2020 CellProfiler team\n License: BSD-3-Clause\n\n File: skimage/exposure/_adapthist.py\n Copyright: 1994 Karel Zuiderveld\n License: BSD-3-Clause\n\n Function: skimage/morphology/_skeletonize_various_cy.pyx:_skeletonize_loop\n Copyright: 2003-2009 Massachusetts Institute of Technology\n            2009-2011 Broad Institute\n            2003 Lee Kamentsky\n License: BSD-3-Clause\n\n Function: skimage/_shared/version_requirements.py:_check_version\n Copyright: 2013 The IPython Development Team\n License: BSD-3-Clause\n\n Function: skimage/_shared/version_requirements.py:is_installed\n Copyright: 2009-2011 Pierre Raybaut\n License: MIT\n\n File: skimage/feature/_fisher_vector.py\n Copyright: 2014 2014 Dan Oneata\n License: MIT\n\n File: skimage/_vendored/numpy_lookfor.py\n Copyright: 2005-2023, NumPy Developers\n License: BSD-3-Clause\n\n File: skimage/transform/_thin_plate_splines.py\n Copyright: 2007 Zachary Pincus\n License: BSD-3-Clause\n\n License: BSD-2-Clause\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n 2. Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n .\n THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE HOLDERS OR\n CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\n PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\n PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n License: BSD-3-Clause\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n 2. Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n 3. Neither the name of the University nor the names of its contributors\n    may be used to endorse or promote products derived from this software\n    without specific prior written permission.\n .\n THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\n A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE HOLDERS OR\n CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\n PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\n PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\n LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\n NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n License: MIT\n\n Permission is hereby granted, free of charge, to any person obtaining a copy\n of this software and associated documentation files (the \"Software\"), to deal\n in the Software without restriction, including without limitation the rights\n to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n copies of the Software, and to permit persons to whom the Software is\n furnished to do so, subject to the following conditions:\n\n The above copyright notice and this permission notice shall be included in all\n copies or substantial portions of the Software.\n\n THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n SOFTWARE.\n",
+    "home_page": null,
+    "files": [
+      "scikit-image/scikit_image-0.26.0.dist-info/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "filelock",
+    "version": "4.0.11",
+    "license": "MIT",
+    "home_page": null,
+    "files": [
+      "filelock/filelock-4.0.11.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "fsspec",
+    "version": "2026.9.0",
+    "license": "BSD-3-Clause",
+    "home_page": null,
+    "files": [
+      "fsspec/fsspec-2026.9.0.dist-info/licenses/LICENSE"
+    ]
+  },
+  {
+    "name": "networkx",
+    "version": "3.7",
+    "license": "BSD-3-Clause",
+    "home_page": null,
+    "files": [
+      "networkx/networkx-3.7.dist-info/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "sympy",
+    "version": "1.14.0",
+    "license": "BSD",
+    "home_page": "https://sympy.org",
+    "files": [
+      "sympy/sympy-1.14.0.dist-info/licenses/LICENSE",
+      "sympy/sympy/parsing/latex/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "mpmath",
+    "version": "1.3.0",
+    "license": "BSD",
+    "home_page": "http://mpmath.org/",
+    "files": [
+      "mpmath/mpmath-1.3.0.dist-info/LICENSE"
+    ]
+  },
+  {
+    "name": "Jinja2",
+    "version": "3.1.6",
+    "license": null,
+    "home_page": null,
+    "files": [
+      "Jinja2/jinja2-3.1.6.dist-info/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "MarkupSafe",
+    "version": "3.0.4",
+    "license": "BSD-3-Clause",
+    "home_page": null,
+    "files": [
+      "MarkupSafe/markupsafe-3.0.4.dist-info/licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license": "PSF-2.0",
+    "home_page": null,
+    "files": [
+      "typing_extensions/typing_extensions-4.16.0.dist-info/licenses/LICENSE"
+    ]
+  }
+]

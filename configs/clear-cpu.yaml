@@ -1,0 +1,5 @@
+# Whole-overlap texture fusion; traditional image processing, no AI model required.
+clear_fusion:
+  enabled: true
+registration:
+  method: sift

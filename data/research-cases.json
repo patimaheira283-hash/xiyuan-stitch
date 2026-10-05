@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "case_count": 30,
+  "description": "30 real photographed pairs; no complete ground-truth panorama. Group by source scene; cross-repository similarity may remain.",
+  "cases": [
+    {
+      "id": "ges_apap_01_garden_b6f9916a",
+      "title": "GES · APAP-01_garden · DSC02930 + DSC02931",
+      "source_id": "ges/APAP-01_garden",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/APAP-01_garden/DSC02930.JPG",
+          "sha256": "d78e5192bc61ac559d2a67589f53abe136dd47dad80402f32d97822086f9fdac",
+          "local_source": "originals/ges/Dataset/APAP-01_garden/DSC02930.JPG"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/APAP-01_garden/DSC02931.JPG",
+          "sha256": "726cb36acd9324934c9da27b6804d7920099a9b5e4ea6acdf14017ff3c41ae45",
+          "local_source": "originals/ges/Dataset/APAP-01_garden/DSC02931.JPG"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_cave_01_atrium_bad372c8",
+      "title": "GES · CAVE-01_atrium · 00 + 01",
+      "source_id": "ges/CAVE-01_atrium",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/CAVE-01_atrium/00.jpg",
+          "sha256": "83b7d45bfb20c3b031e64f4ba0b4b2a0c272960ac6816d195fb6d471103ddd88",
+          "local_source": "originals/ges/Dataset/CAVE-01_atrium/00.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/CAVE-01_atrium/01.jpg",
+          "sha256": "3f9d0ad0b90f8a4d0cefa3f7f327f207a0ca43e661a7b941efead892f6088632",
+          "local_source": "originals/ges/Dataset/CAVE-01_atrium/01.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_cave_04_times_square_3d73aa8a",
+      "title": "GES · CAVE-04_times_square · 00 + 01",
+      "source_id": "ges/CAVE-04_times_square",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/CAVE-04_times_square/00.jpg",
+          "sha256": "baff430d0e6c7628ec33baa71859b10e0ccf398420898cff2ed2716774c1b509",
+          "local_source": "originals/ges/Dataset/CAVE-04_times_square/00.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/CAVE-04_times_square/01.jpg",
+          "sha256": "2b037764140fac61e367da9ba7760179925a1d978d1067a38f4306d820ee764b",
+          "local_source": "originals/ges/Dataset/CAVE-04_times_square/01.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_ges_18_railstation_1_3afa9293",
+      "title": "GES · GES-18_RailStation-1 · 05 + 06",
+      "source_id": "ges/GES-18_RailStation-1",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-18_RailStation-1/05.jpg",
+          "sha256": "a008fc69a954e75d2d8c419e81106d11c501e53808f08072475df16cc9bc9c12",
+          "local_source": "originals/ges/Dataset/GES-18_RailStation-1/05.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-18_RailStation-1/06.jpg",
+          "sha256": "9464c0d2ce18044801f8879ca14fde7cd8ffba816e16f429e92e67578ce6001c",
+          "local_source": "originals/ges/Dataset/GES-18_RailStation-1/06.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_ges_22_wandaindoor_1_e6cdae8f",
+      "title": "GES · GES-22_WandaIndoor-1 · 00 + 01",
+      "source_id": "ges/GES-22_WandaIndoor-1",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-22_WandaIndoor-1/00.jpg",
+          "sha256": "c446498f2a65dd48019cd3ec12a29df73bbf587999579a24d2085f1f147beb6d",
+          "local_source": "originals/ges/Dataset/GES-22_WandaIndoor-1/00.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-22_WandaIndoor-1/01.jpg",
+          "sha256": "e2ab4b0d4b95548a587ffc847e5dfbc4453b9da59181b6cc9cc05364e4fbed8d",
+          "local_source": "originals/ges/Dataset/GES-22_WandaIndoor-1/01.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "lpc_dfw_shelf_b9b2ab9a",
+      "title": "LPC · DFW_shelf · IMG_2976 + IMG_2977",
+      "source_id": "lpc/DFW_shelf",
+      "repository": "dut-media-lab/Image-Stitching",
+      "revision": "2c1564d156e34f9137229875529f52000a135a30",
+      "category": "lpc",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/DFW_shelf/IMG_2976.JPG",
+          "sha256": "792a5e0cd3ea81adde30a676e1f1f18c32a889f4a59ac2b8802d65c89ce08a05",
+          "local_source": "originals/lpc/Imgs/DFW_shelf/IMG_2976.JPG"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/DFW_shelf/IMG_2977.JPG",
+          "sha256": "abab51e2f2e6db1d220fabdd3526e88967cbd2a06800e9b9de127132102c5293",
+          "local_source": "originals/lpc/Imgs/DFW_shelf/IMG_2977.JPG"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "lpc_potberry_5525b368",
+      "title": "LPC · Potberry · ESCF2457_r + ESCF2458_r",
+      "source_id": "lpc/Potberry",
+      "repository": "dut-media-lab/Image-Stitching",
+      "revision": "2c1564d156e34f9137229875529f52000a135a30",
+      "category": "lpc",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/Potberry/ESCF2457_r.PNG",
+          "sha256": "7abe58516877ae373e766601267203ca99a2172b6508e87a2bc37b79fecd0471",
+          "local_source": "originals/lpc/Imgs/Potberry/ESCF2457_r.PNG"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/Potberry/ESCF2458_r.PNG",
+          "sha256": "6e1ffc08f43fcbd2af916ed8f8f79b4455fa6631a649d508601d76b199e4d48d",
+          "local_source": "originals/lpc/Imgs/Potberry/ESCF2458_r.PNG"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "lpc_cup_e95e0f77",
+      "title": "LPC · cup · candidate + reference",
+      "source_id": "lpc/cup",
+      "repository": "dut-media-lab/Image-Stitching",
+      "revision": "2c1564d156e34f9137229875529f52000a135a30",
+      "category": "lpc",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/cup/candidate.jpg",
+          "sha256": "dede83013d9b909da79a5fabbf183fb252fa9b480640df1f657658a7686c103d",
+          "local_source": "originals/lpc/Imgs/cup/candidate.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/cup/reference.jpg",
+          "sha256": "fa757b90c6094cc066e4b052a07074a638abe2ff9e3f32c4ede0227bf07b4fad",
+          "local_source": "originals/lpc/Imgs/cup/reference.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "lpc_library_dd718dea",
+      "title": "LPC · library · 1 + 2",
+      "source_id": "lpc/library",
+      "repository": "dut-media-lab/Image-Stitching",
+      "revision": "2c1564d156e34f9137229875529f52000a135a30",
+      "category": "lpc",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/library/1.jpg",
+          "sha256": "585e7f954c64140c240ea1dbd957330c778db8687c6d1f2d6121ee18179974d1",
+          "local_source": "originals/lpc/Imgs/library/1.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/library/2.jpg",
+          "sha256": "62e37c42225c485d4cfcebab6a5bd6d5e008f00065bdebb2a1eb8fb603b7feed",
+          "local_source": "originals/lpc/Imgs/library/2.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "lpc_school_0c1c5210",
+      "title": "LPC · school · 01 + 02",
+      "source_id": "lpc/school",
+      "repository": "dut-media-lab/Image-Stitching",
+      "revision": "2c1564d156e34f9137229875529f52000a135a30",
+      "category": "lpc",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/school/01.jpg",
+          "sha256": "fc4fb538bccc98480e27802e1ac518c25b240044ce063e4c3666634d9b00e419",
+          "local_source": "originals/lpc/Imgs/school/01.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/dut-media-lab/Image-Stitching/2c1564d156e34f9137229875529f52000a135a30/Imgs/school/02.jpg",
+          "sha256": "d301b1b174386d1cd93779395979eec4fbdfba3c85fda80e19f61c5acd73f2da",
+          "local_source": "originals/lpc/Imgs/school/02.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "rew_anap_intersection_88514d1e",
+      "title": "REW · ANAP-intersection · intersection_01 + intersection_02",
+      "source_id": "rew/ANAP-intersection",
+      "repository": "gain2217/Robust_Elastic_Warping",
+      "revision": "36ad3cb2f709fbea17225642ea1fa7b083924fd9",
+      "category": "rew",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/ANAP-intersection/intersection_01.jpg",
+          "sha256": "7bc9e5b1caeac8e7d16ea1d52e14dc3fe8a62ffecc58d976fd688a043cc47f2a",
+          "local_source": "originals/rew/two_views/images/ANAP-intersection/intersection_01.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/ANAP-intersection/intersection_02.jpg",
+          "sha256": "be714a40bca78aeb13ddf9417868e236a83e89e4f1772b382b8048fb24c74756",
+          "local_source": "originals/rew/two_views/images/ANAP-intersection/intersection_02.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "rew_apap_railtracks_76259972",
+      "title": "REW · APAP-railtracks · railtracks_01 + railtracks_02",
+      "source_id": "rew/APAP-railtracks",
+      "repository": "gain2217/Robust_Elastic_Warping",
+      "revision": "36ad3cb2f709fbea17225642ea1fa7b083924fd9",
+      "category": "rew",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/APAP-railtracks/railtracks_01.JPG",
+          "sha256": "0a3b32ce2d0a99166835e3f1fd7393cabd2a7646818093388c86e58ddfa7a02c",
+          "local_source": "originals/rew/two_views/images/APAP-railtracks/railtracks_01.JPG"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/APAP-railtracks/railtracks_02.JPG",
+          "sha256": "db4800e84897a26ae06484e05995bc2eba742aa71272d7c0b48868ff4f2b330f",
+          "local_source": "originals/rew/two_views/images/APAP-railtracks/railtracks_02.JPG"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "rew_dfw_cabinet_4440b597",
+      "title": "REW · DFW_cabinet · IMG_2720 + IMG_2721",
+      "source_id": "rew/DFW_cabinet",
+      "repository": "gain2217/Robust_Elastic_Warping",
+      "revision": "36ad3cb2f709fbea17225642ea1fa7b083924fd9",
+      "category": "rew",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/DFW_cabinet/IMG_2720.jpg",
+          "sha256": "14db7eb1fe4d772b920178c6d38bb43f282f93d32c75699f7df418e5d1891eb7",
+          "local_source": "originals/rew/two_views/images/DFW_cabinet/IMG_2720.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/DFW_cabinet/IMG_2721.jpg",
+          "sha256": "23279e2556d7ee8c0022860f2b4b011171f3e3cfa3367f589e3375fdd7933384",
+          "local_source": "originals/rew/two_views/images/DFW_cabinet/IMG_2721.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "rew_rew_wall_de776f7d",
+      "title": "REW · REW_wall · wall_01 + wall_02",
+      "source_id": "rew/REW_wall",
+      "repository": "gain2217/Robust_Elastic_Warping",
+      "revision": "36ad3cb2f709fbea17225642ea1fa7b083924fd9",
+      "category": "rew",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/REW_wall/wall_01.jpg",
+          "sha256": "290cb8485882f34a0a7cc4bdf329ef15ccbb1538889e53c589b961d3ac195bd6",
+          "local_source": "originals/rew/two_views/images/REW_wall/wall_01.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/REW_wall/wall_02.jpg",
+          "sha256": "23cbeee2eeafd5cd73585c2dda4d2ffc5c1f7aea6eafee41bfa65e945392c420",
+          "local_source": "originals/rew/two_views/images/REW_wall/wall_02.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "rew_fcase_guardbar_e6936384",
+      "title": "REW · fcase_guardbar · guardbar_01 + guardbar_02",
+      "source_id": "rew/fcase_guardbar",
+      "repository": "gain2217/Robust_Elastic_Warping",
+      "revision": "36ad3cb2f709fbea17225642ea1fa7b083924fd9",
+      "category": "rew",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/fcase_guardbar/guardbar_01.jpg",
+          "sha256": "3e2c7fc40678a55bce5abb50f16922e255dbfbfe8a8e14b5c0ab94edfc3d47b4",
+          "local_source": "originals/rew/two_views/images/fcase_guardbar/guardbar_01.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/gain2217/Robust_Elastic_Warping/36ad3cb2f709fbea17225642ea1fa7b083924fd9/two_views/images/fcase_guardbar/guardbar_02.jpg",
+          "sha256": "e084ebf8c14908879defa3475bdf3090646f885eaefa14ece523de3173dc3f0d",
+          "local_source": "originals/rew/two_views/images/fcase_guardbar/guardbar_02.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "spw_0_904e5904",
+      "title": "SPW · 0 · 0_l + 0_r",
+      "source_id": "spw/0",
+      "repository": "tlliao/Single-perspective-warps",
+      "revision": "0e9e459b60a3e259190bb0066204560d1c128480",
+      "category": "spw",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/0/0_l.jpg",
+          "sha256": "503303a45acda8a169cc4fde68d28760ca1c943056c0adb77c6ae08886f9ba24",
+          "local_source": "originals/spw/TwoImage/Images/0/0_l.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/0/0_r.jpg",
+          "sha256": "2bcb2e7b8e240bc921a1c4ad3a15fc3453b9ae54482a3ade666b06c18c2394f5",
+          "local_source": "originals/spw/TwoImage/Images/0/0_r.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "spw_1_1e56632e",
+      "title": "SPW · 1 · 1_l + 1_r",
+      "source_id": "spw/1",
+      "repository": "tlliao/Single-perspective-warps",
+      "revision": "0e9e459b60a3e259190bb0066204560d1c128480",
+      "category": "spw",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/1/1_l.jpg",
+          "sha256": "2a0de946a5879f9a5eee56a2c48354e5030f49b3572683fdd99e75ec45cc5980",
+          "local_source": "originals/spw/TwoImage/Images/1/1_l.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/1/1_r.jpg",
+          "sha256": "90656d468f522a506178629f497de115f9ee4ddcf17f24f02cd57f47524f3df2",
+          "local_source": "originals/spw/TwoImage/Images/1/1_r.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "spw_10_efab8e6e",
+      "title": "SPW · 10 · 10_l + 10_r",
+      "source_id": "spw/10",
+      "repository": "tlliao/Single-perspective-warps",
+      "revision": "0e9e459b60a3e259190bb0066204560d1c128480",
+      "category": "spw",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/10/10_l.jpg",
+          "sha256": "49586939d9e5f2348272841c7196e529c2e51a006ad1b30932210b90b62fc64a",
+          "local_source": "originals/spw/TwoImage/Images/10/10_l.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/10/10_r.jpg",
+          "sha256": "b58abcc1d5e229ee71b6d35b849e39e77778fc29adab804b1cf33de80c84a5a5",
+          "local_source": "originals/spw/TwoImage/Images/10/10_r.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "spw_11_631df5c6",
+      "title": "SPW · 11 · 11_l + 11_r",
+      "source_id": "spw/11",
+      "repository": "tlliao/Single-perspective-warps",
+      "revision": "0e9e459b60a3e259190bb0066204560d1c128480",
+      "category": "spw",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/11/11_l.jpg",
+          "sha256": "0e55c2bbe99e7dd985ed3976402981f26a865aaebec72a9dc64fe2d49cdc7a73",
+          "local_source": "originals/spw/TwoImage/Images/11/11_l.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/11/11_r.jpg",
+          "sha256": "14c6fae97ef26bd10ddfbace114abc6d0537275b1e9ac7ce0bc63de2d3132ede",
+          "local_source": "originals/spw/TwoImage/Images/11/11_r.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "spw_12_f66932e8",
+      "title": "SPW · 12 · 12_l + 12_r",
+      "source_id": "spw/12",
+      "repository": "tlliao/Single-perspective-warps",
+      "revision": "0e9e459b60a3e259190bb0066204560d1c128480",
+      "category": "spw",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/12/12_l.jpg",
+          "sha256": "3a4da5b3bc6961e8dc1abc2b2d0aa427befd86b72af7416040f4fbf0a4ad5363",
+          "local_source": "originals/spw/TwoImage/Images/12/12_l.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/tlliao/Single-perspective-warps/0e9e459b60a3e259190bb0066204560d1c128480/TwoImage/Images/12/12_r.jpg",
+          "sha256": "b09308e3418467b70cf365119ac00640fd30c911bf4cdcb72c27af161f7ede6b",
+          "local_source": "originals/spw/TwoImage/Images/12/12_r.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_aanap_01_skyline_d0b8d3c6",
+      "title": "GES · AANAP-01_skyline · skyline0 + skyline1",
+      "source_id": "ges/AANAP-01_skyline",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/AANAP-01_skyline/skyline0.png",
+          "sha256": "1dd6e8273d4506a8ff669a35091041591d8025c11903664439ea78ba3de8b132",
+          "local_source": "originals/ges/Dataset/AANAP-01_skyline/skyline0.png"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/AANAP-01_skyline/skyline1.png",
+          "sha256": "8a5a90f408d3242e0e67fac0d146a8e5b2b73cda0ccac0992e590e93d3c1925b",
+          "local_source": "originals/ges/Dataset/AANAP-01_skyline/skyline1.png"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_cave_02_eitan_office_296857c6",
+      "title": "GES · CAVE-02_eitan_office · e-01 + e-02",
+      "source_id": "ges/CAVE-02_eitan_office",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/CAVE-02_eitan_office/e-01.jpg",
+          "sha256": "f9b6a7a0e060b2642a23e67423916eb6fb95fdcf04f27e986e7e21538088348a",
+          "local_source": "originals/ges/Dataset/CAVE-02_eitan_office/e-01.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/CAVE-02_eitan_office/e-02.jpg",
+          "sha256": "b4717e162ae220d003ac24f73908bc332ba81b5116b505066077bdee77a36881",
+          "local_source": "originals/ges/Dataset/CAVE-02_eitan_office/e-02.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_cave_03_playroom_all_869dd1a6",
+      "title": "GES · CAVE-03_playroom-all · 01 + 02",
+      "source_id": "ges/CAVE-03_playroom-all",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/CAVE-03_playroom-all/01.jpg",
+          "sha256": "c975efb69a40e4cd9a6312df189039649761bd70d9912212d9e858bdd4512bf2",
+          "local_source": "originals/ges/Dataset/CAVE-03_playroom-all/01.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/CAVE-03_playroom-all/02.jpg",
+          "sha256": "5444cf7869b64c5104aa27805ba1cce2912f42c04eb3de5d44f563f5da6b119b",
+          "local_source": "originals/ges/Dataset/CAVE-03_playroom-all/02.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_dhw_01_forest_4c77c025",
+      "title": "GES · DHW-01_forest · 1 + 2",
+      "source_id": "ges/DHW-01_forest",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/DHW-01_forest/1.JPG",
+          "sha256": "d24d455154406b76b1908619348993d9d937cdc96a3c737c7f321dbc57350c8f",
+          "local_source": "originals/ges/Dataset/DHW-01_forest/1.JPG"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/DHW-01_forest/2.JPG",
+          "sha256": "66e186e679d4fb7888d9ea470b57e89c2f2119743b9420afd3e29245c80e8aa9",
+          "local_source": "originals/ges/Dataset/DHW-01_forest/2.JPG"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_ges_01_building_1_f61afed2",
+      "title": "GES · GES-01_Building-1 · 0 + 1",
+      "source_id": "ges/GES-01_Building-1",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-01_Building-1/0.jpg",
+          "sha256": "49329d1b46fbb62257c8229d3f25c5600afa76dc54388e77a2d62eb7e67be406",
+          "local_source": "originals/ges/Dataset/GES-01_Building-1/0.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-01_Building-1/1.jpg",
+          "sha256": "f2a488241776a4a64587dddee3ddef3101ebc9c97f38898e1298895c223dd6b5",
+          "local_source": "originals/ges/Dataset/GES-01_Building-1/1.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_ges_02_building_2_990a7af0",
+      "title": "GES · GES-02_Building-2 · 0 + 1",
+      "source_id": "ges/GES-02_Building-2",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-02_Building-2/0.jpg",
+          "sha256": "7e69a475ba258a96088879f9af05a9a56db150de59075c206b1e32166b403189",
+          "local_source": "originals/ges/Dataset/GES-02_Building-2/0.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-02_Building-2/1.jpg",
+          "sha256": "2a60289d929e34b82a1da5a4bf4189cae16a2da06383ffbd0751b549d966b35e",
+          "local_source": "originals/ges/Dataset/GES-02_Building-2/1.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_ges_03_building_3_b5154cf4",
+      "title": "GES · GES-03_Building-3 · 00 + 01",
+      "source_id": "ges/GES-03_Building-3",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-03_Building-3/00.jpg",
+          "sha256": "d38985429ea362cb69a5d154300a7ebde592af21c4f7f035e52815064f1e3005",
+          "local_source": "originals/ges/Dataset/GES-03_Building-3/00.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-03_Building-3/01.jpg",
+          "sha256": "83e8758fad9d51b93acd35cb8d2cd55e295355db932830687362b41700524f5b",
+          "local_source": "originals/ges/Dataset/GES-03_Building-3/01.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_ges_04_building_4_071ae930",
+      "title": "GES · GES-04_Building-4 · 0 + 1",
+      "source_id": "ges/GES-04_Building-4",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-04_Building-4/0.jpg",
+          "sha256": "7db40e864b03de3a547d120b73472ec9ba5ace3df8764e03758db94b3487ce9f",
+          "local_source": "originals/ges/Dataset/GES-04_Building-4/0.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-04_Building-4/1.jpg",
+          "sha256": "c002127d386deb64f5a09e40a66912338fd6ae9e61b8f8936cd71ce9b858bf53",
+          "local_source": "originals/ges/Dataset/GES-04_Building-4/1.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_ges_05_petrolbuilding_1_512d857c",
+      "title": "GES · GES-05_PetrolBuilding-1 · 00 + 01",
+      "source_id": "ges/GES-05_PetrolBuilding-1",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-05_PetrolBuilding-1/00.jpg",
+          "sha256": "055790eb404d9848f47f0375f018b150cf95ebfd72930f3cf3e6620135a7f5ec",
+          "local_source": "originals/ges/Dataset/GES-05_PetrolBuilding-1/00.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-05_PetrolBuilding-1/01.jpg",
+          "sha256": "daef5a6c1f163fca8f86924f21a0974732e922f6f14d91cfbe126f715605fc3b",
+          "local_source": "originals/ges/Dataset/GES-05_PetrolBuilding-1/01.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    },
+    {
+      "id": "ges_ges_06_wandabuilding_1_c5c79ba5",
+      "title": "GES · GES-06_WandaBuilding-1 · 00 + 01",
+      "source_id": "ges/GES-06_WandaBuilding-1",
+      "repository": "flowerDuo/GES-GSP-Stitching",
+      "revision": "21e5e8889abce3872e97baf1310382e3d3306cf8",
+      "category": "ges",
+      "kind": "real_capture",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-06_WandaBuilding-1/00.jpg",
+          "sha256": "5133546b3b0c12b2b09752d13af2bf388aba2fb92b571ffa01c57d2f7866496f",
+          "local_source": "originals/ges/Dataset/GES-06_WandaBuilding-1/00.jpg"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/flowerDuo/GES-GSP-Stitching/21e5e8889abce3872e97baf1310382e3d3306cf8/Dataset/GES-06_WandaBuilding-1/01.jpg",
+          "sha256": "c809225b3e02b3fa0aea9ec0696c9602efa3debed8f077e34ea89204be7459c0",
+          "local_source": "originals/ges/Dataset/GES-06_WandaBuilding-1/01.jpg"
+        }
+      ],
+      "reference": null,
+      "license": "upstream research data; no standalone data license supplied",
+      "source_note": "Download directly from the authors; retain attribution. Not licensed as CC0."
+    }
+  ]
+}

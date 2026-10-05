@@ -1,0 +1,6 @@
+-r windows-neural.txt
+scikit-image==0.26.0
+lpips==0.1.4
+pytest==9.1.1
+kaggle==2.2.4
+psutil>=5.9

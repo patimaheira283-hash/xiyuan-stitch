@@ -1,0 +1,5 @@
+clear_fusion:
+  enabled: true
+registration:
+  method: loftr
+  loftr_device: cpu

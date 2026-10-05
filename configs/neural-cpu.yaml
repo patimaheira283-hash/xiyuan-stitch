@@ -1,0 +1,8 @@
+registration:
+  method: loftr
+  loftr_device: cpu
+inpainting:
+  engine: neural_alignment
+neural_alignment:
+  method: raft_large
+  device: cpu

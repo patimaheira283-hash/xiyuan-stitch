@@ -1,0 +1,5 @@
+-r windows-base.txt
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.0
+torchvision==0.29.0
+kornia==0.8.1

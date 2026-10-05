@@ -1,0 +1,53 @@
+{
+  "sources": [
+    {
+      "id": "fine_grained_wood",
+      "category": "wood",
+      "file": "sources/fine_grained_wood.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/fine_grained_wood/fine_grained_wood_col_1k.jpg",
+      "sha256": "d171f45ef01bc6e239b00dfaa4961bcd27f7d8e93e3962da3bd3d0ce703d802c",
+      "md5": "3db9decdde678e087e67ff99d30c0a73",
+      "asset_page": "https://polyhaven.com/a/fine_grained_wood",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "kind": "public texture color map, not an independent camera overlap pair"
+    },
+    {
+      "id": "dark_wooden_planks",
+      "category": "wood",
+      "file": "sources/dark_wooden_planks.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/dark_wooden_planks/dark_wooden_planks_diff_1k.jpg",
+      "sha256": "e8216baa6b2d701b5523fcb904d45570acf7b96d160ef815e96e2dbfa82bdd9b",
+      "md5": "7ec8fe3e0b84289a4add3b10a54090bb",
+      "asset_page": "https://polyhaven.com/a/dark_wooden_planks",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "kind": "public texture color map, not an independent camera overlap pair"
+    },
+    {
+      "id": "brick_wall_003",
+      "category": "brick",
+      "file": "sources/brick_wall_003.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_wall_003/brick_wall_003_diffuse_1k.jpg",
+      "sha256": "cb691df78201bd292c1004a796b76ef8ee9895548fb545a4a4d6d77903eeec01",
+      "md5": "f917c7eaf958f2805185103adf1f7abb",
+      "asset_page": "https://polyhaven.com/a/brick_wall_003",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "kind": "public texture color map, not an independent camera overlap pair"
+    },
+    {
+      "id": "brick_wall_005",
+      "category": "brick",
+      "file": "sources/brick_wall_005.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brick_wall_005/brick_wall_005_diff_1k.jpg",
+      "sha256": "415017e21a9efc3ed5ab2a43a1c58855fadac8d4181c4bb84e4366a1cc0b687e",
+      "md5": "f5b727170f1e91eeb617ad363792fe62",
+      "asset_page": "https://polyhaven.com/a/brick_wall_005",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "kind": "public texture color map, not an independent camera overlap pair"
+    }
+  ],
+  "selection": "Four assets fixed before inspecting algorithm results on them."
+}

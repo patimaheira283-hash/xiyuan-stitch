@@ -1,0 +1,938 @@
+{
+  "schema_version": 1,
+  "description": "30 controlled pairs derived from 3 CC0 grayscale photographs; not 30 independent real captures.",
+  "independent_source_count": 3,
+  "case_count": 30,
+  "cases": [
+    {
+      "id": "brick_01_identity",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "identity",
+      "image_a": "cases/brick_01_identity/a.png",
+      "image_b": "cases/brick_01_identity/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "c68fdf41c39e934206dca80ecb8ac2d5493a6f9a199ce4886de3c4533ddc2acb"
+      }
+    },
+    {
+      "id": "brick_02_brighter",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "brighter",
+      "image_a": "cases/brick_02_brighter/a.png",
+      "image_b": "cases/brick_02_brighter/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "b1bda472d1f335f1a62f406b47846e00f36915b76999335191bf6447a6c4f6bd"
+      }
+    },
+    {
+      "id": "brick_03_darker",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "darker",
+      "image_a": "cases/brick_03_darker/a.png",
+      "image_b": "cases/brick_03_darker/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "536189f7b6e7366da5f7d87734fd052e7fe9f46ce9421ac3d8d8181c7d3fdfe9"
+      }
+    },
+    {
+      "id": "brick_04_gamma",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "gamma",
+      "image_a": "cases/brick_04_gamma/a.png",
+      "image_b": "cases/brick_04_gamma/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "50d4c6a974ef342b36a2a9ccafb40d18abcd4652d62777a04b94a7d2a3f8c07d"
+      }
+    },
+    {
+      "id": "brick_05_perspective",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "perspective",
+      "image_a": "cases/brick_05_perspective/a.png",
+      "image_b": "cases/brick_05_perspective/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "042b352020b94dfea6800ca0de7b4b9131b270de4067d2d5810ba99852d724a8"
+      }
+    },
+    {
+      "id": "brick_06_rotate",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "rotate",
+      "image_a": "cases/brick_06_rotate/a.png",
+      "image_b": "cases/brick_06_rotate/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "540ac183dd266dabbfce24be5b6f1d0b1aba4fb0e3d1248911f6b5dd8f6a4b15"
+      }
+    },
+    {
+      "id": "brick_07_noise",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "noise",
+      "image_a": "cases/brick_07_noise/a.png",
+      "image_b": "cases/brick_07_noise/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "dab306be467d333c3bd4085d3e794264a601c1171ad69a518db8f9d7640dc3d6"
+      }
+    },
+    {
+      "id": "brick_08_resolution",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "resolution",
+      "image_a": "cases/brick_08_resolution/a.png",
+      "image_b": "cases/brick_08_resolution/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "9547fb6e7fc738dcc24162e128f5b9e5b0391c97f35d9c787d5e8ee2015918b1"
+      }
+    },
+    {
+      "id": "brick_09_lighting_gradient",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "lighting_gradient",
+      "image_a": "cases/brick_09_lighting_gradient/a.png",
+      "image_b": "cases/brick_09_lighting_gradient/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "2c67d5547e93a8b162e38bd78777da9530658377f8a2d55eb2885ddbd469025d"
+      }
+    },
+    {
+      "id": "brick_10_mixed",
+      "category": "brick",
+      "source_id": "brick",
+      "kind": "derived_photo_pair",
+      "variant": "mixed",
+      "image_a": "cases/brick_10_mixed/a.png",
+      "image_b": "cases/brick_10_mixed/b.png",
+      "reference": "sources/brick.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "70c496fe68173533a731a208b6b6024df119dad64f7731e787fb96ce06586eca",
+        "b": "d8817bff51aeaf16f5f99f3527b2b7438ad60940c75fec77f6db51c798aa80b5"
+      }
+    },
+    {
+      "id": "grass_01_identity",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "identity",
+      "image_a": "cases/grass_01_identity/a.png",
+      "image_b": "cases/grass_01_identity/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "f257e4a056ebd7b6a24ce3c78acd8d71b59f9e7db88c931fa8049fad04b2d171"
+      }
+    },
+    {
+      "id": "grass_02_brighter",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "brighter",
+      "image_a": "cases/grass_02_brighter/a.png",
+      "image_b": "cases/grass_02_brighter/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "2d600694e1eae5d9acd7b75d82c60eb8bb65144506490fe054627a28797569ff"
+      }
+    },
+    {
+      "id": "grass_03_darker",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "darker",
+      "image_a": "cases/grass_03_darker/a.png",
+      "image_b": "cases/grass_03_darker/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "3960b1677e62c3d0b76f396dd283a8c59a6e043efa6aa6350b5bec9f8ad252aa"
+      }
+    },
+    {
+      "id": "grass_04_gamma",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "gamma",
+      "image_a": "cases/grass_04_gamma/a.png",
+      "image_b": "cases/grass_04_gamma/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "de36a7105348cde76d9f376f764abbc72d95670c9ee6af11427ab99fabe3c088"
+      }
+    },
+    {
+      "id": "grass_05_perspective",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "perspective",
+      "image_a": "cases/grass_05_perspective/a.png",
+      "image_b": "cases/grass_05_perspective/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "7af308513e6fa80fc1f92c3c37c79c6a3415bb5ea164b4bdebb69ab1878da11e"
+      }
+    },
+    {
+      "id": "grass_06_rotate",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "rotate",
+      "image_a": "cases/grass_06_rotate/a.png",
+      "image_b": "cases/grass_06_rotate/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "66b76a6af7e760d02b8411e3cb3682953493cea5189e74f3ee447658f9d9a6ce"
+      }
+    },
+    {
+      "id": "grass_07_noise",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "noise",
+      "image_a": "cases/grass_07_noise/a.png",
+      "image_b": "cases/grass_07_noise/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "f9f6b1e67c95d00564cb759e79156ed655d0a6903c3658fed6e873381393ab7f"
+      }
+    },
+    {
+      "id": "grass_08_resolution",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "resolution",
+      "image_a": "cases/grass_08_resolution/a.png",
+      "image_b": "cases/grass_08_resolution/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "962465d8561d34a63ba2cb491db655106421b766e6df22d842c64b8f74dbe56a"
+      }
+    },
+    {
+      "id": "grass_09_lighting_gradient",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "lighting_gradient",
+      "image_a": "cases/grass_09_lighting_gradient/a.png",
+      "image_b": "cases/grass_09_lighting_gradient/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "17031710097f1bc72278cf09f3c917517559d424ae9a53f5c0aa3d9a6caef09a"
+      }
+    },
+    {
+      "id": "grass_10_mixed",
+      "category": "grass",
+      "source_id": "grass",
+      "kind": "derived_photo_pair",
+      "variant": "mixed",
+      "image_a": "cases/grass_10_mixed/a.png",
+      "image_b": "cases/grass_10_mixed/b.png",
+      "reference": "sources/grass.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "6d8ca707bc5a52e43e6163eb9035bf668b1dc291337471885b3dbc10c98091d7",
+        "b": "bb6815e1d229ddd498eb37a60adb3f8a06c4b2bfb5a5703dba4b13e1ba97cbfd"
+      }
+    },
+    {
+      "id": "gravel_01_identity",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "identity",
+      "image_a": "cases/gravel_01_identity/a.png",
+      "image_b": "cases/gravel_01_identity/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "6844413ff51514ada813746224801a794df2ffd99a5a57aba10fa22937b8d4d3"
+      }
+    },
+    {
+      "id": "gravel_02_brighter",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "brighter",
+      "image_a": "cases/gravel_02_brighter/a.png",
+      "image_b": "cases/gravel_02_brighter/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "51774f4d9882a1880f79aae8a591b4f60ea163702a007ea4649c10010cd27a48"
+      }
+    },
+    {
+      "id": "gravel_03_darker",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "darker",
+      "image_a": "cases/gravel_03_darker/a.png",
+      "image_b": "cases/gravel_03_darker/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "a2b4940b011e8257602d7b31e94020ef2b93aa05144c567f2407c7b892a64a6a"
+      }
+    },
+    {
+      "id": "gravel_04_gamma",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "gamma",
+      "image_a": "cases/gravel_04_gamma/a.png",
+      "image_b": "cases/gravel_04_gamma/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "9833d09b94d9845ba8c41b11e4481a247173fcb76ccd6bdad075efdd08029002"
+      }
+    },
+    {
+      "id": "gravel_05_perspective",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "perspective",
+      "image_a": "cases/gravel_05_perspective/a.png",
+      "image_b": "cases/gravel_05_perspective/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "623ea3709c4c7c784c5d21d97d90f566065de8d399755ce001c7c9397fc8d5ea"
+      }
+    },
+    {
+      "id": "gravel_06_rotate",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "rotate",
+      "image_a": "cases/gravel_06_rotate/a.png",
+      "image_b": "cases/gravel_06_rotate/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "1945238056298bda6e0fceb7aca78915a97d3a163ab31f61f959a6bcf4679f1c"
+      }
+    },
+    {
+      "id": "gravel_07_noise",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "noise",
+      "image_a": "cases/gravel_07_noise/a.png",
+      "image_b": "cases/gravel_07_noise/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "697c4f4974148be5ca73456f70b6b47994d6299f94fcbaac6202ece47e5fe683"
+      }
+    },
+    {
+      "id": "gravel_08_resolution",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "resolution",
+      "image_a": "cases/gravel_08_resolution/a.png",
+      "image_b": "cases/gravel_08_resolution/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "cafd429ad7dcfe2f1bacb110ef8a6337f1173866e9e213cacc4f8a913bb3d01a"
+      }
+    },
+    {
+      "id": "gravel_09_lighting_gradient",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "lighting_gradient",
+      "image_a": "cases/gravel_09_lighting_gradient/a.png",
+      "image_b": "cases/gravel_09_lighting_gradient/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "9c0acf2a3ff65849e58aa29627d0b94e9e6bee0d6e3304ccb903f63e2bbcb000"
+      }
+    },
+    {
+      "id": "gravel_10_mixed",
+      "category": "gravel",
+      "source_id": "gravel",
+      "kind": "derived_photo_pair",
+      "variant": "mixed",
+      "image_a": "cases/gravel_10_mixed/a.png",
+      "image_b": "cases/gravel_10_mixed/b.png",
+      "reference": "sources/gravel.png",
+      "reference_to_a": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "input_sha256": {
+        "a": "40f01b4ddefbbb6534dc0a0877b8469c05c90d8a7f7bbb637772a8b97cf821c1",
+        "b": "5bdb54876c915c97f74096cd3cd84b0ab9df0fabd96f756be2cecff757a31eb7"
+      }
+    }
+  ]
+}

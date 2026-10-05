@@ -1,0 +1,49 @@
+name: Verify frozen source
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install test dependencies
+        run: |
+          python -m pip install -r requirements/windows-test.txt
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -m pip install -e . --no-deps
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Test
+        run: python -m pytest -q --junitxml=verification/tests.xml
+      - name: Build wheel
+        run: python -m pip wheel . --no-deps --wheel-dir dist
+      - name: Install and run outside checkout
+        run: |
+          python -m venv .venv-check --system-site-packages
+          .venv-check/Scripts/python.exe -m pip install --no-deps (Get-ChildItem dist/*.whl).FullName
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $taskPython = (Resolve-Path '.venv-check/Scripts/python.exe').Path
+          Push-Location $env:RUNNER_TEMP
+          & $taskPython -I -c "from xiyuan_mvp import __version__; from xiyuan_mvp.pipeline import StitchPipeline; import numpy as np; a=np.random.default_rng(2026).integers(0,256,(160,400,3),dtype=np.uint8); r=StitchPipeline().run(a[:,:280],a[:,120:]); assert r.metrics['inliers'] >= 8; print(__version__, r.final_image.shape)"
+          $taskExit = $LASTEXITCODE
+          Pop-Location
+          exit $taskExit
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification
+          path: |
+            verification/tests.xml
+            dist/*.whl

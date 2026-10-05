@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xiyuan-stitch"
+dynamic = ["version"]
+description = "Desktop multi-image stitching with constrained diffusion and reproducible GPU experiments"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26,<3",
+  "opencv-python>=4.8",
+  "Pillow>=10",
+  "PyYAML>=6",
+]
+
+[project.optional-dependencies]
+ai = [
+  "torch>=2.2",
+  "diffusers>=0.30",
+  "transformers>=4.40",
+  "accelerate>=0.30",
+  "safetensors>=0.4",
+  "peft>=0.17",
+]
+loftr = ["kornia>=0.7"]
+neural = ["torch>=2.2", "torchvision>=0.17"]
+gui = ["PySide6>=6.7"]
+kaggle = ["kaggle>=2.2,<3"]
+dev = ["pytest>=8", "scikit-image>=0.24", "requests>=2.32"]
+experiment = ["scikit-image>=0.24", "lpips>=0.1.4"]
+
+[project.scripts]
+xiyuan-stitch = "xiyuan_mvp.cli:main"
+xiyuan-stitch-gui = "xiyuan_mvp.gui:main"
+xiyuan-benchmark = "xiyuan_mvp.benchmark:main"
+
+[tool.setuptools.packages.find]
+include = ["xiyuan_mvp*"]
+
+[tool.setuptools.package-data]
+xiyuan_mvp = ["default.yaml"]
+
+[tool.setuptools.dynamic]
+version = {attr = "xiyuan_mvp.__version__"}
