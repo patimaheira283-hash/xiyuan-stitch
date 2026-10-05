@@ -28,7 +28,7 @@ try:
         QGraphicsScene, QGraphicsView, QGroupBox, QHBoxLayout, QLabel, QLineEdit,
         QMainWindow, QMessageBox, QPlainTextEdit, QProgressBar, QPushButton,
         QScrollArea, QSpinBox, QSplitter, QTabWidget, QToolBar, QVBoxLayout, QWidget,
-        QListWidget, QListWidgetItem, QAbstractItemView,
+        QListWidget, QListWidgetItem, QAbstractItemView, QFrame,
     )
 except ImportError as exc:
     raise SystemExit('缺少 PySide6，请先安装 .[gui] 可选依赖。') from exc
@@ -46,7 +46,10 @@ class ImageView(QGraphicsView):
     def __init__(self, editable=False):
         super().__init__()
         self.setScene(QGraphicsScene(self))
-        self.setBackgroundBrush(QColor("#202932"))
+        self.setBackgroundBrush(QColor("#111a24"))
+        self.setFrameShape(QGraphicsView.NoFrame)
+        self.setAlignment(Qt.AlignCenter)
+        self.setViewportMargins(10, 10, 10, 10)
         self.setRenderHint(QPainter.SmoothPixmapTransform)
         self.setTransformationAnchor(QGraphicsView.AnchorUnderMouse)
         self.setMinimumSize(240, 200)
@@ -257,6 +260,8 @@ class MainWindow(QMainWindow):
     def _build_ui(self):
         toolbar = QToolBar("文件")
         toolbar.setMovable(False)
+        toolbar.setObjectName("mainToolbar")
+        toolbar.setToolButtonStyle(Qt.ToolButtonTextOnly)
         self.addToolBar(toolbar)
         self.file_actions = []
         for label, handler in (
@@ -275,8 +280,41 @@ class MainWindow(QMainWindow):
         undo.triggered.connect(lambda: self.mask_view.undo_mask() if not self._is_busy() else None)
         self.addAction(undo)
         root = QWidget()
+        root.setObjectName("appRoot")
         layout = QVBoxLayout(root)
+        layout.setContentsMargins(18, 14, 18, 14)
+        layout.setSpacing(10)
+
+        header = QFrame()
+        header.setObjectName("heroHeader")
+        header_layout = QHBoxLayout(header)
+        header_layout.setContentsMargins(18, 14, 18, 14)
+        header_layout.setSpacing(14)
+        header_copy = QVBoxLayout()
+        header_copy.setSpacing(2)
+        eyebrow = QLabel("XIYUAN  ·  IMAGE STITCHING WORKBENCH")
+        eyebrow.setObjectName("eyebrow")
+        title = QLabel("曦源图像拼接")
+        title.setObjectName("heroTitle")
+        subtitle = QLabel("从重叠图片开始，完成配准、接缝编辑、结构修复与原尺寸导出")
+        subtitle.setObjectName("heroSubtitle")
+        header_copy.addWidget(eyebrow)
+        header_copy.addWidget(title)
+        header_copy.addWidget(subtitle)
+        header_layout.addLayout(header_copy, 1)
+        version_badge = QLabel(f"v{__version__}")
+        version_badge.setObjectName("versionBadge")
+        version_badge.setAlignment(Qt.AlignCenter)
+        version_badge.setToolTip("当前软件版本")
+        header_layout.addWidget(version_badge, 0, Qt.AlignTop)
+        layout.addWidget(header)
+
+        self.workflow_hint = QLabel("① 导入图片  ② 自动配准  ③ 编辑接缝  ④ 运行修复  ⑤ 导出结果")
+        self.workflow_hint.setObjectName("workflowHint")
+        layout.addWidget(self.workflow_hint)
+
         self.path_label = QLabel("请导入两张具有重叠区域的图片")
+        self.path_label.setObjectName("pathSummary")
         self.path_label.setWordWrap(True)
         layout.addWidget(self.path_label)
         split = QSplitter()
@@ -284,9 +322,9 @@ class MainWindow(QMainWindow):
         panel.setMinimumWidth(290)
         panel.setMaximumWidth(360)
         controls = QVBoxLayout(panel)
-        title = QLabel("图像拼接工作台")
-        title.setStyleSheet("font-size:20px;font-weight:600;color:#175e69;margin:6px 0")
-        controls.addWidget(title)
+        panel_heading = QLabel("工作台控制")
+        panel_heading.setObjectName("panelHeading")
+        controls.addWidget(panel_heading)
         self.sequence_group = QGroupBox("多图顺序（拖动调整，相邻图片需重叠）")
         sequence_layout=QVBoxLayout(self.sequence_group)
         self.sequence_list=QListWidget()
@@ -296,20 +334,38 @@ class MainWindow(QMainWindow):
         sequence_layout.addWidget(self.sequence_list)
         self.sequence_group.hide()
         controls.addWidget(self.sequence_group)
+        fusion_heading = QLabel("01  ·  输入与融合")
+        fusion_heading.setObjectName("sectionHeading")
+        controls.addWidget(fusion_heading)
         self.clear_fusion = QCheckBox('清晰融合：优先保留原图细节')
+        self.clear_fusion.setObjectName("featureCheck")
         self.clear_fusion.setToolTip('本机图像算法，无需 GPU。比较两图清晰度，仅在差异明确时选择更清楚的纹理；影响整个重叠区域。更改后重新配准。')
         controls.addWidget(self.clear_fusion)
-        self.run_button = QPushButton("1  自动配准与融合")
-        self.ai_button = QPushButton("2  运行 AI 修复")
-        self.cancel_button = QPushButton("取消计算")
+        action_row = QHBoxLayout()
+        action_row.setSpacing(8)
+        self.run_button = QPushButton("开始配准")
+        self.run_button.setObjectName("primaryAction")
+        self.run_button.setToolTip("读取两张图片，自动配准并生成融合底图")
+        self.ai_button = QPushButton("运行修复")
+        self.ai_button.setObjectName("accentAction")
+        self.ai_button.setToolTip("使用当前接缝区域和修复设置生成结果")
+        action_row.addWidget(self.run_button)
+        action_row.addWidget(self.ai_button)
+        controls.addLayout(action_row)
+        self.cancel_button = QPushButton("取消当前任务")
+        self.cancel_button.setObjectName("cancelAction")
+        self.cancel_button.setToolTip("停止当前计算，已完成的输入不会被删除")
         self.run_button.clicked.connect(lambda: self._start(False))
         self.ai_button.clicked.connect(lambda: self._start(True))
         self.cancel_button.clicked.connect(self._cancel)
-        for widget in (self.run_button, self.ai_button, self.cancel_button):
-            controls.addWidget(widget)
+        controls.addWidget(self.cancel_button)
         self.quick_export_button=QPushButton('导出当前结果')
+        self.quick_export_button.setObjectName("secondaryAction")
         self.quick_export_button.clicked.connect(self._save)
         controls.addWidget(self.quick_export_button)
+        settings_heading = QLabel("02  ·  修复方式与参数")
+        settings_heading.setObjectName("sectionHeading")
+        controls.addWidget(settings_heading)
         self.settings_group = QGroupBox("修复参数")
         form = QFormLayout(self.settings_group)
         self.mode = QComboBox()
@@ -388,8 +444,12 @@ class MainWindow(QMainWindow):
         self.repair_engine.currentIndexChanged.connect(self._engine_changed)
         self.hybrid_policy.currentIndexChanged.connect(self._hybrid_policy_changed)
         controls.addWidget(self.settings_group)
+        mask_heading = QLabel("03  ·  接缝编辑")
+        mask_heading.setObjectName("sectionHeading")
+        controls.addWidget(mask_heading)
         self.mask_group = QGroupBox("接缝画笔")
         mask_layout = QVBoxLayout(self.mask_group)
+        mask_layout.setSpacing(8)
         self.brush_size = QSpinBox()
         self.brush_size.setRange(2, 300)
         self.brush_size.setValue(48)
@@ -398,8 +458,12 @@ class MainWindow(QMainWindow):
         mask_layout.addWidget(self.brush_size)
         row = QHBoxLayout()
         self.paint_button, self.erase_button = QPushButton("画笔"), QPushButton("橡皮")
-        self.paint_button.clicked.connect(lambda: self.mask_view.set_brush(self.brush_size.value(), False))
-        self.erase_button.clicked.connect(lambda: self.mask_view.set_brush(self.brush_size.value(), True))
+        for button in (self.paint_button, self.erase_button):
+            button.setCheckable(True)
+            button.setAutoExclusive(True)
+        self.paint_button.setChecked(True)
+        self.paint_button.clicked.connect(lambda: self._set_brush_mode(False))
+        self.erase_button.clicked.connect(lambda: self._set_brush_mode(True))
         row.addWidget(self.paint_button)
         row.addWidget(self.erase_button)
         mask_layout.addLayout(row)
@@ -414,15 +478,20 @@ class MainWindow(QMainWindow):
             row.addWidget(widget)
         mask_layout.addLayout(row)
         controls.addWidget(self.mask_group)
+        export_heading = QLabel("04  ·  导出与分享")
+        export_heading.setObjectName("sectionHeading")
+        controls.addWidget(export_heading)
         self.save_button = QPushButton("导出当前查看的图片")
+        self.save_button.setObjectName("secondaryAction")
         self.save_button.clicked.connect(self._save)
         self.job_button = QPushButton("导出免费 GPU 任务")
+        self.job_button.setObjectName("secondaryAction")
         self.job_button.clicked.connect(self._export_job)
         controls.addWidget(self.save_button)
         controls.addWidget(self.job_button)
-        hint = QLabel("先配准，再在接缝页调整红色区域。\n滚轮缩放，中键 / 右键拖动画布。\n双击画布适应窗口，Ctrl+Z 撤销画笔。")
+        hint = QLabel("操作提示\n先配准，再在接缝页调整红色区域。\n滚轮缩放，中键 / 右键拖动画布。\n双击画布适应窗口，Ctrl+Z 撤销画笔。")
+        hint.setObjectName("helpCard")
         hint.setWordWrap(True)
-        hint.setStyleSheet("color:#64717a;line-height:1.5")
         controls.addWidget(hint)
         controls.addStretch()
         scroll = QScrollArea()
@@ -430,33 +499,142 @@ class MainWindow(QMainWindow):
         scroll.setWidget(panel)
         scroll.setMinimumWidth(320)
         self.tabs = QTabWidget()
+        self.tabs.setObjectName("resultTabs")
+        self.tabs.setDocumentMode(True)
+        self.tabs.setUsesScrollButtons(True)
         self.source_a_view, self.source_b_view = ImageView(), ImageView()
         self.traditional_view, self.poisson_view = ImageView(), ImageView()
         self.initial_view = ImageView()
         self.mask_view, self.final_view = ImageView(True), ImageView()
+        tab_help = {
+            "原图 A": "输入图片 A。双击画布适应窗口，滚轮缩放。",
+            "原图 B": "输入图片 B。双击画布适应窗口，滚轮缩放。",
+            "羽化融合": "快速、平滑的传统融合基线。",
+            "泊松融合": "颜色连续性优先的传统融合基线。",
+            "清晰融合 / 修复底图": "当前送入结构修复或生成修复的底图。",
+            "接缝编辑": "用画笔添加、橡皮擦除需要处理的接缝区域。",
+            "AI 结果": "当前 AI 修复结果；导出时使用原始画布尺寸。",
+        }
         for view, label in ((self.source_a_view, "原图 A"), (self.source_b_view, "原图 B"),
                             (self.traditional_view, "羽化融合"), (self.poisson_view, "泊松融合"),
                             (self.initial_view, "清晰融合 / 修复底图"), (self.mask_view, "接缝编辑"), (self.final_view, "AI 结果")):
             self.tabs.addTab(view, label)
+            self.tabs.setTabToolTip(self.tabs.count() - 1, tab_help[label])
         split.addWidget(scroll)
         split.addWidget(self.tabs)
         split.setStretchFactor(1, 1)
         split.setSizes([320, 1020])
         layout.addWidget(split, 1)
+        status_panel = QFrame()
+        status_panel.setObjectName("statusPanel")
+        status_layout = QVBoxLayout(status_panel)
+        status_layout.setContentsMargins(12, 8, 12, 8)
+        status_layout.setSpacing(6)
         self.status_label = QLabel("就绪 · 原始分辨率导出")
+        self.status_label.setObjectName("statusLabel")
         self.status_label.setWordWrap(True)
         self.progress_bar = QProgressBar()
+        self.progress_bar.setObjectName("taskProgress")
         self.progress_bar.setRange(0, 100)
-        layout.addWidget(self.status_label)
-        layout.addWidget(self.progress_bar)
+        self.progress_bar.setTextVisible(False)
+        status_layout.addWidget(self.status_label)
+        status_layout.addWidget(self.progress_bar)
+        layout.addWidget(status_panel)
         self.log = QPlainTextEdit()
+        self.log.setObjectName("runLog")
         self.log.setReadOnly(True)
-        self.log.setMaximumHeight(75)
+        self.log.setMaximumHeight(84)
         self.log.setPlaceholderText("运行记录与错误信息")
         layout.addWidget(self.log)
         self.setCentralWidget(root)
-        self.setStyleSheet("QPushButton{padding:7px}QGroupBox{font-weight:600;margin-top:10px}QGroupBox::title{subcontrol-origin:margin;left:8px}QLineEdit,QSpinBox,QDoubleSpinBox,QComboBox{padding:3px}")
+        self.setStyleSheet(self._style_sheet())
         self._set_busy(False)
+
+    @staticmethod
+    def _style_sheet():
+        return """
+        QWidget#appRoot { background: #f4f7fa; color: #1d2a35; }
+        QMainWindow { background: #f4f7fa; }
+        QToolBar#mainToolbar {
+            background: #ffffff; border: 0; border-bottom: 1px solid #dce5eb;
+            padding: 5px 10px; spacing: 3px;
+        }
+        QToolBar#mainToolbar QToolButton {
+            color: #425466; background: transparent; border: 0; border-radius: 6px;
+            padding: 7px 9px;
+        }
+        QToolBar#mainToolbar QToolButton:hover { background: #e9f3f5; color: #0f6875; }
+        QFrame#heroHeader {
+            background: qlineargradient(x1:0,y1:0,x2:1,y2:0, stop:0 #0f6674, stop:1 #214f78);
+            border-radius: 12px;
+        }
+        QLabel#eyebrow { color: #bce7e5; font-size: 10px; font-weight: 700; letter-spacing: 1px; }
+        QLabel#heroTitle { color: white; font-size: 26px; font-weight: 700; }
+        QLabel#heroSubtitle { color: #d6eef0; font-size: 12px; }
+        QLabel#versionBadge {
+            background: rgba(255,255,255,0.16); color: white; border: 1px solid rgba(255,255,255,0.28);
+            border-radius: 10px; padding: 5px 10px; font-weight: 700;
+        }
+        QLabel#workflowHint {
+            background: #e8f5f4; color: #146873; border: 1px solid #cce8e6;
+            border-radius: 7px; padding: 8px 12px; font-weight: 600;
+        }
+        QLabel#pathSummary {
+            background: #ffffff; color: #536575; border: 1px solid #dce5eb;
+            border-radius: 7px; padding: 8px 12px;
+        }
+        QLabel#panelHeading { color: #123f50; font-size: 18px; font-weight: 700; padding: 2px 2px 6px; }
+        QLabel#sectionHeading { color: #728391; font-size: 10px; font-weight: 800; padding: 8px 2px 1px; }
+        QScrollArea { border: 0; background: transparent; }
+        QGroupBox {
+            background: #ffffff; border: 1px solid #dce5eb; border-radius: 9px;
+            margin-top: 10px; padding: 14px 10px 10px; font-weight: 700; color: #304553;
+        }
+        QGroupBox::title { subcontrol-origin: margin; left: 10px; padding: 0 5px; color: #2e5c68; background: #f4f7fa; }
+        QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox, QPlainTextEdit {
+            background: #fbfdfe; color: #243746; border: 1px solid #cbd8df; border-radius: 5px; padding: 5px 7px;
+        }
+        QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus, QPlainTextEdit:focus {
+            border: 1px solid #3b9aa3; background: #ffffff;
+        }
+        QComboBox::drop-down { border: 0; width: 22px; }
+        QCheckBox { spacing: 7px; padding: 3px 1px; color: #324b59; }
+        QCheckBox#featureCheck { background: #edf8f6; border: 1px solid #c9e8e2; border-radius: 6px; padding: 7px; font-weight: 600; }
+        QCheckBox::indicator { width: 15px; height: 15px; }
+        QPushButton {
+            background: #ffffff; color: #31505e; border: 1px solid #c8d6de; border-radius: 6px;
+            padding: 7px 10px; min-height: 18px; font-weight: 600;
+        }
+        QPushButton:hover { background: #edf7f7; border-color: #56aab0; color: #155e68; }
+        QPushButton:pressed { background: #dff0ef; }
+        QPushButton:disabled { background: #eef1f3; color: #9aa8b1; border-color: #e0e6ea; }
+        QPushButton#primaryAction { background: #0f7581; color: white; border-color: #0f7581; }
+        QPushButton#primaryAction:hover { background: #0a6470; }
+        QPushButton#accentAction { background: #d8744a; color: white; border-color: #d8744a; }
+        QPushButton#accentAction:hover { background: #bd5f38; }
+        QPushButton#cancelAction { color: #a85443; }
+        QPushButton#secondaryAction { background: #f3f8f9; color: #2c6770; border-color: #bdd9dc; }
+        QPushButton:checked { background: #d8eff0; border: 1px solid #26929b; color: #0b6973; }
+        QListWidget { background: #fbfdfe; border: 1px solid #cbd8df; border-radius: 5px; padding: 3px; }
+        QListWidget::item { padding: 5px; border-radius: 4px; }
+        QListWidget::item:selected { background: #dceff0; color: #155d66; }
+        QTabWidget#resultTabs::pane { background: #111a24; border: 1px solid #263743; border-radius: 9px; }
+        QTabWidget#resultTabs QTabBar::tab {
+            background: #e9eef2; color: #5e707d; border: 0; border-top-left-radius: 6px; border-top-right-radius: 6px;
+            padding: 8px 11px; margin-right: 2px;
+        }
+        QTabWidget#resultTabs QTabBar::tab:selected { background: #111a24; color: #e8f6f6; font-weight: 700; }
+        QTabWidget#resultTabs QTabBar::tab:hover:!selected { background: #d9e8eb; color: #275d67; }
+        QFrame#statusPanel { background: #ffffff; border: 1px solid #dce5eb; border-radius: 8px; }
+        QLabel#statusLabel { color: #3b5260; font-weight: 600; }
+        QProgressBar#taskProgress { background: #edf1f3; border: 0; border-radius: 4px; height: 7px; }
+        QProgressBar#taskProgress::chunk { background: #1b8b91; border-radius: 4px; }
+        QPlainTextEdit#runLog { background: #1c2832; color: #c1d0d6; border: 0; border-radius: 7px; padding: 7px; font-family: Consolas; font-size: 11px; }
+        QLabel#helpCard { background: #edf2f5; color: #657681; border: 1px solid #d9e3e8; border-radius: 7px; padding: 9px; line-height: 1.45; }
+        QSplitter::handle { background: #dce5eb; width: 6px; }
+        QScrollBar:vertical { background: #edf1f3; width: 10px; margin: 2px; border-radius: 5px; }
+        QScrollBar::handle:vertical { background: #b7c8d0; border-radius: 5px; min-height: 30px; }
+        """
 
     def _load_controls(self):
         ai = self.config["inpainting"]
@@ -695,6 +873,13 @@ class MainWindow(QMainWindow):
             self._sync_config()
             mask = self.result.mask if self.result.metrics.get("sequence_count",2)>2 else generate_seam_mask(self.result.registration, self.config["mask"])
             self.mask_view.set_image(self.initial_view._image, mask.binary_mask)
+
+    def _set_brush_mode(self, erase):
+        """Keep the editing mode visible while preserving the existing mask API."""
+        self.mask_view.set_brush(self.brush_size.value(), erase)
+        self.paint_button.setChecked(not erase)
+        self.erase_button.setChecked(erase)
+        self.status_label.setText("接缝编辑 · 橡皮擦除模式" if erase else "接缝编辑 · 画笔添加模式")
 
     def _save(self):
         view = self.tabs.currentWidget()
